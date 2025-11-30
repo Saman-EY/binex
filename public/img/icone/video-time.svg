@@ -1,0 +1,10 @@
+<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 9.35352V15.3535C22 15.5735 22 15.7935 21.98 16.0035C21.16 14.9935 19.91 14.3535 18.5 14.3535C17.44 14.3535 16.46 14.7235 15.69 15.3435C14.65 16.1635 14 17.4335 14 18.8535C14 20.2635 14.64 21.5135 15.65 22.3335C15.44 22.3535 15.22 22.3535 15 22.3535H9C4 22.3535 2 20.3535 2 15.3535V9.35352C2 4.35352 4 2.35352 9 2.35352H15C20 2.35352 22 4.35352 22 9.35352Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<g opacity="0.4">
+<path d="M2.52002 7.46338H21.48" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.52002 2.46338V7.32336" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.48 2.46338V6.87341" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M23 18.8535C23 20.2035 22.4 21.4035 21.47 22.2335C20.67 22.9235 19.64 23.3535 18.5 23.3535C17.42 23.3535 16.42 22.9735 15.65 22.3335C14.64 21.5135 14 20.2635 14 18.8535C14 17.4335 14.65 16.1635 15.69 15.3435C16.46 14.7235 17.44 14.3535 18.5 14.3535C19.91 14.3535 21.16 14.9935 21.98 16.0035C22.62 16.7735 23 17.7735 23 18.8535Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.4" d="M18.7799 17.4436V19.1336L17.3799 19.9736" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
