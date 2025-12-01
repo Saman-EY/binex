@@ -76,6 +76,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-yekan)"],
+        lily: ["var(--font-gothic)"],
       },
     },
   },

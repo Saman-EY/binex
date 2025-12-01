@@ -21,18 +21,12 @@ const TableTwo = (props: TTableTwoProps) => {
         <table className="table border-spacing-y-2 border-separate">
           {/* head */}
           <thead>
-            <tr
-              className="text-center border-b-0"
-             
-            >
+            <tr className="text-center border-b-0">
               <th className="text-gray900 text-xs font-semibold bg-head-table-color py-4 rounded-r-xl">
                 نام و نماد ارز
               </th>
               <th className="text-gray900 text-xs font-semibold bg-head-table-color py-4">
-                <CaptionThTable
-                  className="flex items-center"
-                  parentClassName="justify-center"
-                >
+                <CaptionThTable className="flex items-center" parentClassName="justify-center">
                   <i className="mx-2 text-green100">
                     <ChevronUpIcon />
                   </i>
@@ -42,10 +36,7 @@ const TableTwo = (props: TTableTwoProps) => {
                 </CaptionThTable>
               </th>
               <th className="text-gray900 text-xs font-semibold bg-head-table-color py-4">
-                <CaptionThTable
-                  className="flex items-center"
-                  parentClassName="justify-center"
-                >
+                <CaptionThTable className="flex items-center" parentClassName="justify-center">
                   <i className="mx-2 text-green100">
                     <ChevronUpIcon />
                   </i>
@@ -55,10 +46,7 @@ const TableTwo = (props: TTableTwoProps) => {
                 </CaptionThTable>
               </th>
               <th className="text-gray900 text-xs font-semibold bg-head-table-color py-4">
-                <CaptionThTable
-                  className="flex items-center"
-                  parentClassName="justify-center"
-                >
+                <CaptionThTable className="flex items-center" parentClassName="justify-center">
                   <i className="mx-2 text-green100">
                     <ChevronUpIcon />
                   </i>
@@ -68,10 +56,7 @@ const TableTwo = (props: TTableTwoProps) => {
                 </CaptionThTable>
               </th>
               <th className="text-gray900 text-xs font-semibold bg-head-table-color py-4">
-                <CaptionThTable
-                  className="flex items-center"
-                  parentClassName="justify-center"
-                >
+                <CaptionThTable className="flex items-center" parentClassName="justify-center">
                   <i className="mx-2 text-green100">
                     <ChevronUpIcon />
                   </i>
@@ -81,10 +66,7 @@ const TableTwo = (props: TTableTwoProps) => {
                 </CaptionThTable>
               </th>
               <th className="text-gray900 text-xs font-semibold bg-head-table-color py-4 rounded-l-xl">
-                <CaptionThTable
-                  className="flex items-center"
-                  parentClassName="justify-center"
-                >
+                <CaptionThTable className="flex items-center" parentClassName="justify-center">
                   <i className="mx-2 text-green100">
                     <ChevronUpIcon />
                   </i>
@@ -114,12 +96,8 @@ const TableTwo = (props: TTableTwoProps) => {
                       </div>
                     </CryptocurrencyLogo>
                     <NameCryptocurrency>
-                      <span className="text-base text-gray900 font-semibold">
-                        {"BTC"}
-                      </span>
-                      <span className="text-gray800 text-sm ms-1">
-                        {"(بیتکوین)"}
-                      </span>
+                      <span className="text-base text-gray900 font-semibold">{"BTC"}</span>
+                      <span className="text-gray800 text-sm ms-1">{"(بیتکوین)"}</span>
                     </NameCryptocurrency>
                   </td>
                   <td>
@@ -135,7 +113,7 @@ const TableTwo = (props: TTableTwoProps) => {
                     <CurrenciesCotnent />
                   </td>
                   <td>
-                  <span className="font-bold text-sm text-emerald-400">#{idx+1}</span>
+                    <span className="font-bold text-sm text-emerald-400">#{idx + 1}</span>
                   </td>
                 </tr>
               );

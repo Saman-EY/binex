@@ -14,37 +14,32 @@ import ThirtyDaysProfitLoss from "./components/ThirtyDaysProfitLoss/ThirtyDaysPr
 import BuySubscription from "./components/BuySubscription/BuySubscription";
 import Caption from "./components/global/Caption";
 
-
 export default function Home() {
-
-    return (
-        <>
-            <Header/>
-            <main>
-                <Intro/>
-                <DailyTableLanding/>
-                <BuiltArtificialIntelligence/>
-                <ThirtyDaysProfitLoss/>
-                <span className={"my-8 flex"}/>
-                <ExchangesBinex/>
-                <span className={"my-8 flex"}/>
-                <BinexFeatures/>
-                <span className={"my-8 flex"}/>
-                <FAQBinex showExtraButton/>
-                <span className={"my-8 flex"}/>
-                <BinexRobots/>
-                <span className={"my-8 flex"}/>
-                <Caption className='text-dark font-bold lg:text-4xl text-3xl mx-auto  mb-6'>
-                    {"خرید اشتراک"}
-                </Caption>
-                <BuySubscription/>
-                <span className={"my-8 flex"}/>
-                <BinexTraining/>
-                <span className={"my-8 flex"}/>
-                <SevenDaysFreeBinex/>
-            </main>
-            <Footer/>
-        </>
-    );
+  return (
+    <>
+      <Header />
+      <main>
+        <Intro />
+        <DailyTableLanding />
+        <BuiltArtificialIntelligence />
+        <ThirtyDaysProfitLoss />
+        <span className={"my-8 flex"} />
+        <ExchangesBinex />
+        <span className={"my-8 flex"} />
+        <BinexFeatures />
+        <span className={"my-8 flex"} />
+        <FAQBinex showExtraButton />
+        <span className={"my-8 flex"} />
+        <BinexRobots />
+        <span className={"my-8 flex"} />
+        <Caption className="text-dark font-bold lg:text-4xl text-3xl mx-auto  mb-6">{"خرید اشتراک"}</Caption>
+        <BuySubscription />
+        <span className={"my-8 flex"} />
+        <BinexTraining />
+        <span className={"my-8 flex"} />
+        <SevenDaysFreeBinex />
+      </main>
+      <Footer />
+    </>
+  );
 }
-

@@ -1,68 +1,68 @@
 export const routes = {
-    home: "/",
-    aboutUs: "/about-us",
-    blog: {
-        index: "/blogs",
-        post: "/blogs/blog-post"
+  home: "/",
+  aboutUs: "/about-us",
+  blog: {
+    index: "/blogs",
+    post: "/blogs/blog-post",
+  },
+  buySubscription: "/buy-subscription",
+  currencies: "/currencies-binex",
+  dailyProfitLoss: "/daily-profit-loss",
+  dedicatedCurrency: "/dedicated-currency",
+  maximumProfitLoss: "/maximum-profit-loss",
+  maximumMonthly: "/maximum-monthly",
+  reviewProfitLoss: "/review-profit-loss",
+  learn: "/learn",
+  faq: "/faq",
+  robots: "/robots",
+  robotInfo: "/robot-info",
+  ai: "/ai",
+  dashboard: {
+    myProfitLoss: {
+      foreign: "/dashboard/my-profit-loss",
+      iran: "/dashboard/my-profit-loss/iran",
     },
-    buySubscription: "/buy-subscription",
-    currencies: "/currencies-binex",
-    dailyProfitLoss: "/daily-profit-loss",
-    dedicatedCurrency: "/dedicated-currency",
-    maximumProfitLoss: "/maximum-profit-loss",
-    maximumMonthly: "/maximum-monthly",
-    reviewProfitLoss: "/review-profit-loss",
-    learn: '/learn',
-    faq: '/faq',
-    robots: '/robots',
-    robotInfo: "/robot-info",
-    ai: '/ai',
-    dashboard: {
-        myProfitLoss: {
-            foreign: "/dashboard/my-profit-loss",
-            iran: "/dashboard/my-profit-loss/iran",
-        },
-        binanceMarket: "/dashboard/binex-market",
-        binanceMarket2: "/dashboard/binex-market-two",
-        robots: {
-            binexRobots: "/dashboard/robots/binex-robots",
-            activeRobots: "/dashboard/robots/active-robots",
-            addRobotOnline: "/dashboard/robots/add-robot-online",
-            addRobotOffline: "/dashboard/robots/add-robot-offline"
-        },
-        orders: {
-            activeTrades: "/dashboard/orders",
-            history: "/dashboard/orders/history"
-        },
-        subscription:{
-            details: "/dashboard/subscription/details",
-            purchase: "/dashboard/subscription/purchase",
-            purchase1: "/dashboard/subscription/purchase-1"
-        },
-        financial: {
-            pending: "/dashboard/financial/pending",
-            deposits: "/dashboard/financial/deposits",
-            withdraws: "/dashboard/financial/withdraws",
-            accounts: "/dashboard/financial/accounts",
-            withdraw: "/dashboard/financial/withdraw",
-        },
-        referral: "/dashboard/referral",
-        profile: {
-            index: "/dashboard/profile",
-            edit: "/dashboard/profile/profile-edit",
-            changePassword: "/dashboard/profile/password-edit",
-        },
-        support:{
-            tickets: "/dashboard/tickets",
-            new: "/dashboard/tickets/new"
-        }
+    binanceMarket: "/dashboard/binex-market",
+    binanceMarket2: "/dashboard/binex-market-two",
+    robots: {
+      binexRobots: "/dashboard/robots/binex-robots",
+      activeRobots: "/dashboard/robots/active-robots",
+      addRobotOnline: "/dashboard/robots/add-robot-online",
+      addRobotOffline: "/dashboard/robots/add-robot-offline",
     },
-    auth:{
-        login: "/auth/login",
-        loginFree: "/auth/login-free",
-        loginFreeCode: "/auth/login-free/code",
-        register: "/auth/register",
-        registerFree: "/auth/register-free",
-        resetPassword: "/auth/password-recovery",
-    }
-}
+    orders: {
+      activeTrades: "/dashboard/orders",
+      history: "/dashboard/orders/history",
+    },
+    subscription: {
+      details: "/dashboard/subscription/details",
+      purchase: "/dashboard/subscription/purchase",
+      purchase1: "/dashboard/subscription/purchase-1",
+    },
+    financial: {
+      pending: "/dashboard/financial/pending",
+      deposits: "/dashboard/financial/deposits",
+      withdraws: "/dashboard/financial/withdraws",
+      accounts: "/dashboard/financial/accounts",
+      withdraw: "/dashboard/financial/withdraw",
+    },
+    referral: "/dashboard/referral",
+    profile: {
+      index: "/dashboard/profile",
+      edit: "/dashboard/profile/profile-edit",
+      changePassword: "/dashboard/profile/password-edit",
+    },
+    support: {
+      tickets: "/dashboard/tickets",
+      new: "/dashboard/tickets/new",
+    },
+  },
+  auth: {
+    login: "/auth/login",
+    loginFree: "/auth/login-free",
+    loginFreeCode: "/auth/login-free/code",
+    register: "/auth/register",
+    registerFree: "/auth/register-free",
+    resetPassword: "/auth/password-recovery",
+  },
+};
