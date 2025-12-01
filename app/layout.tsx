@@ -7,10 +7,10 @@ import NextTopLoader from "nextjs-toploader";
 import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 
-import { Lily_Script_One } from "next/font/google";
+import { Merriweather } from "next/font/google";
 
-const lily = Lily_Script_One({
-  weight: ["400"],
+const lily = Merriweather({
+  weight: ["300"],
   subsets: ["latin"],
   variable: "--font-gothic",
 });

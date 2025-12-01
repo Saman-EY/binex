@@ -32,9 +32,8 @@ const ForgetPassword = ({}: {}) => {
                 <div className="w-full mt-8 aaa ">
                     <div className="flex flex-col gap-6">
                         <LoginInput
-                            label="برای تغییر رمز عبور، شماره موبایل خود را وارد نمایید"
+                            label="برای تغییر رمز عبور، ایمیل خود را وارد نمایید"
                             className="text-end"
-                            placeholder="+98"
                         ></LoginInput>
                         <div className="flex flex-col gap-1">
                             <ButtonPrimary

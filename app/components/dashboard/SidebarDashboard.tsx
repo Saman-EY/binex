@@ -36,10 +36,7 @@ type TDashboardSidebarProps = {
   sidebarOpen: boolean;
   toggleSidebar: (open?: boolean) => void;
 };
-function DashboardSidebar({
-  sidebarOpen,
-  toggleSidebar,
-}: TDashboardSidebarProps) {
+function DashboardSidebar({ sidebarOpen, toggleSidebar }: TDashboardSidebarProps) {
   const activePathName = usePathname();
 
   return (
@@ -53,15 +50,11 @@ function DashboardSidebar({
       >
         {/* logo */}
         <div className="flex items-center justify-center  py-4 border-b border-line mx-4 ~lg:hidden">
-        <LogoBinex />
+          <LogoBinex />
         </div>
         {/* Links */}
         <div className="flex flex-col grow">
-          <AccordionMenu
-            items={sidebarLinks}
-            activeLink={activePathName}
-            toggleSidebar={toggleSidebar}
-          />
+          <AccordionMenu items={sidebarLinks} activeLink={activePathName} toggleSidebar={toggleSidebar} />
         </div>
 
         <div className="bg-gradient-to-t from-white to-dark rounded-3xl my-4 p-4 lg:flex flex-col hidden mx-8 items-center justify-center">
@@ -71,9 +64,7 @@ function DashboardSidebar({
             </i>
           </div>
           <div className="gap-1 flex flex-col items-center justify-center">
-            <Caption className="text-white text-xl font-bold ">
-              {"امنیت"}
-            </Caption>
+            <Caption className="text-white text-xl font-bold ">{"امنیت"}</Caption>
           </div>
         </div>
       </div>
@@ -94,16 +85,7 @@ const sidebarLinks: TLink[] = [
   {
     text: "سود و زیان من",
     icon: <DiagramIcon />,
-    children: [
-      {
-        text: "صرافی‌‌های ایرانی",
-        link: routes.dashboard.myProfitLoss.iran,
-      },
-      {
-        text: "صرافی‌های خارجی",
-        link: routes.dashboard.myProfitLoss.foreign,
-      },
-    ],
+    link: routes.dashboard.myProfitLoss.foreign,
   },
   {
     text: "بازار باینکس",
@@ -126,7 +108,6 @@ const sidebarLinks: TLink[] = [
         text: "ربات‌های فعال من",
         link: routes.dashboard.robots.activeRobots,
       },
-
     ],
   },
   {

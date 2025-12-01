@@ -8,7 +8,7 @@ function RobotProfitBox() {
   return (
     <>
       <div className="flex-col gap-3 flex">
-        <div className="flex items-center justify-between bg-line rounded-2xl px-4 py-3">
+        <div className="flex items-center  justify-between bg-gray-100 rounded-2xl px-4 py-3">
           <div className="">
             <Caption className="text-dark lg:text-sm text-xs ">
               <span className="flex items-center justify-center gap-2">
@@ -24,7 +24,7 @@ function RobotProfitBox() {
           </div>
         </div>
 
-        <div className="flex items-center justify-between bg-line rounded-2xl px-4 py-3">
+        <div className="flex items-center justify-between bg-gray-200 rounded-2xl px-4 py-3">
           <div className="">
             <Caption className="text-dark lg:text-sm text-xs ">
               <span className="flex items-center justify-center gap-2">
@@ -39,7 +39,7 @@ function RobotProfitBox() {
             <RobotCotnent />
           </div>
         </div>
-        <div className="flex items-center justify-between bg-line rounded-2xl px-4 py-3">
+        <div className="flex items-center justify-between bg-gray-300 rounded-2xl px-4 py-3">
           <div className="">
             <Caption className="text-dark lg:text-sm text-xs ">
               <span className="flex items-center justify-center gap-2">

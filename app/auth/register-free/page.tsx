@@ -13,52 +13,45 @@ import Link from "next/link";
 import React from "react";
 
 function Page() {
-    return (
-        <>
-            <div className="flex flex-col items-center w-full gap-8 max-w-[500px] mx-auto justify-center lg:pt-[15%]">
-                <div className="flex items-center justify-center gap-4 w-full flex-col">
-                    <div className="flex flex-col items-center justify-center lg:gap-5 gap-8 w-full">
-                        <LoginSignupHeader title="ثبت نام"></LoginSignupHeader>
-                        <div className=" mx-auto">
-                            <LoginSevenFree />
-                        </div>
-                    </div>
-                    {/* step 1 */}
-                    <div className="w-full lg:mt-8 mt-4 ">
-                        <form action="" className="flex flex-col gap-6">
-                            <div className="flex flex-col gap-2">
-                                <LoginInput
-                                    label="شماره موبایل خود را وارد نمایید"
-                                    className="text-end"
-                                    placeholder="+98"
-                                ></LoginInput>
-                                <AcceptTermsBinex />
-                            </div>
-                            <div className="flex flex-col gap-1">
-                                <ButtonPrimary className=" ~lg:!py-3">
-                                    <span className=" gap-1 flex items-center justify-center">
-                                        تایید و ادامه
-                                        <i>
-                                            <ArrowLeftIcon />
-                                        </i>
-                                    </span>
-                                </ButtonPrimary>
-
-                                <NotAccount title="حساب کاربری دارید؟">
-                                    <Link
-                                        href={routes.auth.loginFree}
-                                        className="text-blue-light lg:text-sm lg:font-semibold"
-                                    >
-                                        ورود
-                                    </Link>
-                                </NotAccount>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+  return (
+    <>
+      <div className="flex flex-col items-center w-full gap-8 max-w-[500px] mx-auto justify-center lg:pt-[15%]">
+        <div className="flex items-center justify-center gap-4 w-full flex-col">
+          <div className="flex flex-col items-center justify-center lg:gap-5 gap-8 w-full">
+            <LoginSignupHeader title="ثبت نام"></LoginSignupHeader>
+            <div className=" mx-auto">
+              <LoginSevenFree />
             </div>
-        </>
-    );
+          </div>
+          {/* step 1 */}
+          <div className="w-full lg:mt-8 mt-4 ">
+            <form action="" className="flex flex-col gap-6">
+              <div className="flex flex-col gap-2">
+                <LoginInput label="ایمیل خود را وارد کنید" className="text-end"></LoginInput>
+                <AcceptTermsBinex />
+              </div>
+              <div className="flex flex-col gap-1">
+                <ButtonPrimary className=" ~lg:!py-3">
+                  <span className=" gap-1 flex items-center justify-center">
+                    تایید و ادامه
+                    <i>
+                      <ArrowLeftIcon />
+                    </i>
+                  </span>
+                </ButtonPrimary>
+
+                <NotAccount title="حساب کاربری دارید؟">
+                  <Link href={routes.auth.loginFree} className="text-blue-light lg:text-sm lg:font-semibold">
+                    ورود
+                  </Link>
+                </NotAccount>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export default Page;

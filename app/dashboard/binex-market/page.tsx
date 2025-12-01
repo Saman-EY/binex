@@ -19,9 +19,7 @@ function Page() {
     <>
       <div className=" px-4 py-4 flex flex-col gap-4">
         <div className="lg:hidden flex items-center justify-center">
-          <Caption>
-            {"بازار باینکس"}
-          </Caption>
+          <Caption>{"بازار باینکس"}</Caption>
         </div>
         <Link href={routes.dashboard.robots.addRobotOnline} className="w-full max-w-[360px] mx-auto">
           <ButtonBinex className="bg-green100 flex items-center justify-center gap-2">
@@ -32,9 +30,7 @@ function Page() {
 
         <div className="bg-white p-4 rounded-2xl lg:flex flex-col gap-4 hidden ">
           <div className="">
-            <Caption className="text-dark-black text-xl">
-              {" بازار باینکس"}
-            </Caption>
+            <Caption className="text-dark-black text-xl">{" بازار باینکس"}</Caption>
           </div>
           <TableDTwo />
         </div>

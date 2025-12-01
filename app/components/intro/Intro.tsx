@@ -8,10 +8,9 @@ import { routes } from "@/app/routes";
 function Intro() {
   return (
     <div className="container mx-auto">
-      <h6 className="text-3xl font-lily text-center font-semibold block lg:hidden mt-5">Number Never Lie</h6>
       <div className="lg:flex-row flex flex-col-reverse items-center justify-between mt-8 lg:mx-8 mx-4 mb-20 gap-y-8">
         <div className="~lg:w-full">
-          <h6 className="text-2xl font-lily text-center font-semibold hidden lg:block">Number Never Lie</h6>
+          
           <div className="flex items-center">
             <div className="">
               <Image
@@ -34,14 +33,13 @@ function Intro() {
           </div>
           <div className="flex items-center w-full gap-2 lg:mt-6 mt-4">
             <Link href={routes.auth.loginFree} className="basis-1/2 grow">
-              <ButtonPrimary className="px-0 bg-yellow text-dark font-extrabold leading-4">
-                نسخه دمو
-              </ButtonPrimary>
+              <ButtonPrimary className="px-0 bg-yellow text-dark font-extrabold leading-4">نسخه دمو</ButtonPrimary>
             </Link>
             <Link href={routes.auth.register} className="basis-1/2 grow ">
               <ButtonBinex className="px-0">{"ثبت نام"}</ButtonBinex>
             </Link>
           </div>
+          <h6 className="text-5xl font-lily text-center mt-5">Number Never Lie</h6>
         </div>
 
         <div className="flex items-end">

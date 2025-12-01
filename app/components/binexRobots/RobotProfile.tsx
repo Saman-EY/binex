@@ -16,7 +16,7 @@ function RobotProfile() {
         <div className="flex justify-center">
           <Image
             className="lg:w-full w-3/4"
-            src="/img/robots/Helinsky.png"
+            src="/img/robots/NEO.png"
             alt="Cryptocurrency"
             width={180}
             height={180}
@@ -29,15 +29,15 @@ function RobotProfile() {
           <div className="flex items-center gap-2">
             <RobotName parentClassName="flex-row items-center">
               <span className="lg:text-xl text-dark text-base  font-semibold">
-                {"فلیپر"}
+                نئو
               </span>
               <span className="text-dark lg:text-xl text-base ms-1">
-                {"Flliper"}
+                {"(Neo)"}
               </span>
             </RobotName>
             <Image
               className="lg:w-full w-3/4"
-              src="/img/robots/Helinsky.png"
+              src="/img/robots/NEO.png"
               alt="Cryptocurrency"
               width={24}
               height={24}

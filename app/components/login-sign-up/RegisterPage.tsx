@@ -25,9 +25,8 @@ const RegisterPage = () => {
                         <form action="" className="flex flex-col gap-6">
                             <div className="">
                                 <LoginInput
-                                    label="شماره موبایل خود را وارد نمایید"
+                                    label="ایمیل خود را وارد نمایید"
                                     className="text-end"
-                                    placeholder="+98"
                                 ></LoginInput>
                             </div>
                             <div className="">
@@ -119,7 +118,7 @@ const RegisterPage = () => {
                 <div className="">
                     <BinexMessage
                         title=" ثبت نام شما با موفقیت در باینکس انجام شد."
-                        text="شما می‌توانید با استفاده از شماره موبایل و رمزعبور وارد شده، وارد داشبورد اختصاصی خود شوید."
+                        text="شما می‌توانید با استفاده از ایمیل و رمزعبور وارد شده، وارد داشبورد اختصاصی خود شوید."
                     >
                         <LogoBinex />
                     </BinexMessage>

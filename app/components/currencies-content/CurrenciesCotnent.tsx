@@ -31,13 +31,13 @@ function CurrenciesCotnent() {
           }}
           parentClassName="mobile:flex-col sm:gap-2  w-full"
         >
-          <Link href={routes.robotInfo}>
+          <Link href={`${routes.robotInfo}/neo`}>
             <Image className="size-7" width={100} height={100} src="/img/robots/NEO.png" alt="" />
           </Link>
-          <Link href={routes.robotInfo} className="lg:text-xs text-[10px] text-nowrap text-gray900">
+          <Link href={`${routes.robotInfo}/neo`} className="lg:text-xs text-[10px] text-nowrap text-gray900">
             {"نئو"}
           </Link>
-          <Link href={routes.robotInfo} className="text-gray800 lg:text-xs text-[10px] text-nowrap ms-1">
+          <Link href={`${routes.robotInfo}/neo`} className="text-gray800 lg:text-xs text-[10px] text-nowrap ms-1">
             {"(Neo) "}
           </Link>
         </RobotName>

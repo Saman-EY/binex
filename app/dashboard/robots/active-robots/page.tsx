@@ -16,9 +16,7 @@ function Page() {
     <>
       <div className=" px-4 py-4 flex flex-col gap-4">
         <div className="flex lg:flex-row flex-col items-center justify-between gap-4">
-          <Caption >
-            {"ربات‌های فعال من "}
-          </Caption>
+          <Caption>{"ربات‌های فعال من "}</Caption>
           <div className="~lg:w-full">
             <Link href={routes.dashboard.robots.binexRobots}>
               <ButtonPrimary className="">

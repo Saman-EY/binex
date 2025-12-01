@@ -18,27 +18,26 @@ function Page() {
         <div className="w-full">
           <div className="flex flex-col">
             <div className="mb-4">
-              <LoginInput
-                label="شماره موبایل خود را وارد نمایید"
-                placeholder="+98"
-                name="mobile"
-              ></LoginInput>
+              <LoginInput label="ایمیل خود را وارد کنید" placeholder="" name="email"></LoginInput>
             </div>
             <div className="">
-              <LoginInput
-                label="رمز عبور خود را وارد نمایید"
-                placeholder=""
-                type="password"
-                eye
-              ></LoginInput>
+              <LoginInput label="رمز عبور خود را وارد نمایید" placeholder="" type="password" eye></LoginInput>
             </div>
             <div className="flex items-start justify-start mt-2">
               <Link href={routes.auth.resetPassword}>
-                <span className="text-xs font-semibold text-blue-light">
-                  فراموشی رمز عبور
-                </span>
+                <span className="text-xs font-semibold text-blue-light">فراموشی رمز عبور</span>
               </Link>
             </div>
+            <Link className="mt-5" href={routes.dashboard.binanceMarket}>
+              <ButtonPrimary className=" ~lg:!py-3">
+                <span className=" gap-1 flex items-center justify-center">
+                  تایید و ادامه
+                  <i>
+                    <ArrowLeftIcon />
+                  </i>
+                </span>
+              </ButtonPrimary>
+            </Link>
             <div className="flex flex-col w-full gap-3 lg:mt-8 mt-4">
               <div className="flex items-center gap-1 justify-center ">
                 <div className="w-[200px] h-[1px] bg-line "></div>
@@ -46,20 +45,12 @@ function Page() {
                 <div className="w-[200px] h-[1px] bg-line "></div>
               </div>
               <div className="flex flex-col gap-1">
-                <Link href={routes.dashboard.binanceMarket}>
-                  <ButtonPrimary className=" ~lg:!py-3">
-                  <span className=" gap-1 flex items-center justify-center">
-                    تایید و ادامه
-                    <i>
-                      <ArrowLeftIcon />
-                    </i>
-                  </span>
-                  </ButtonPrimary>
+                <Link className="bg-gray-100 mb-2 text-center shadow-xs py-2 rounded-lg text-sm text-gray-500" href={""}>
+                  ورود با گوگل
                 </Link>
-
                 <NotAccount title="حساب کاربری ندارید؟">
                   <Link href={routes.auth.register} className="text-xs lg:text-sm lg:font-semibold text-blue-light">
-                      ثبت نام
+                    ثبت نام
                   </Link>
                 </NotAccount>
               </div>

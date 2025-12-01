@@ -12,10 +12,7 @@ function DailyProfit() {
   return (
     <>
       <div className="flex items-center justify-between">
-        <Link
-          href={routes.dedicatedCurrency}
-          className="flex items-center justify-between w-full"
-        >
+        <Link href={routes.dedicatedCurrency} className="flex items-center justify-between w-full">
           <div className="flex items-center gap-2">
             <CryptocurrencyLogo>
               <div className="">
@@ -30,12 +27,8 @@ function DailyProfit() {
             </CryptocurrencyLogo>
             <div className="">
               <NameCryptocurrency parentClassName="flex-col item-end gap-1.5">
-                <span className="text-base text-white font-semibold">
-                  {"BTC"}
-                </span>
-                <span className="text-gray400 text-xs  mt-1">
-                  {"(بیتکوین)"}
-                </span>
+                <span className="text-base text-white font-semibold">{"BTC"}</span>
+                <span className="text-gray400 text-xs  mt-1">{"(بیتکوین)"}</span>
               </NameCryptocurrency>
             </div>
           </div>
@@ -53,6 +46,13 @@ function DailyProfit() {
             </div>
             <div className="mt-2.5">
               <RobotName parentClassName="">
+                <Image
+                  className="ml-2"
+                  src="/img/robots/NEO.png"
+                  alt="Cryptocurrency"
+                  width={24}
+                  height={24}
+                />
                 <span className="text-xs text-white font-extralight">{"نوا"}</span>
                 <span className="text-gray400 text-xxs ms-1">{"(Nova) "}</span>
               </RobotName>

@@ -28,24 +28,20 @@ function CurrencyInfo() {
                 </span>
               </Caption>
               <NameCryptocurrency parentClassName="gap-1">
-                <span className=" text-sm text-nowrap text-dark800 font-semibold">
-                  {"BTC"}
-                </span>
-                <span className="text-dark  text-sm text-nowrap">
-                  {"(بیتکوین) "}
-                </span>
+                <span className=" text-sm text-nowrap text-dark800 font-semibold">{"BTC"}</span>
+                <span className="text-dark  text-sm text-nowrap">{"(بیتکوین) "}</span>
               </NameCryptocurrency>
             </div>
             <div className="flex items-center justify-between border-b border-gray400 py-2">
-                <Caption className="lg:text-sm text-xs  text-gray800">
-                  <span className="flex items-center gap-1">
-                    <i className="text-dark800">
-                      <MoneyTimeIcon />
-                    </i>
-                    {"تایم فریم:"}
-                  </span>
-                </Caption>
-                <TimeFrame className="text-sm text-dark">{"1h"}</TimeFrame>
+              <Caption className="lg:text-sm text-xs  text-gray800">
+                <span className="flex items-center gap-1">
+                  <i className="text-dark800">
+                    <MoneyTimeIcon />
+                  </i>
+                  {"تایم فریم:"}
+                </span>
+              </Caption>
+              <TimeFrame className="text-sm text-dark">{"1h"}</TimeFrame>
             </div>
             <div className="flex items-center justify-between py-2">
               <Caption className="lg:text-sm text-xs text-gray800">
@@ -58,16 +54,12 @@ function CurrencyInfo() {
               </Caption>
               <div className="flex items-center gap-2">
                 <RobotName parentClassName="flex-row items-center">
-                  <span className="text-dark800 font-bold">
-                    {"فلیپر"}
-                  </span>
-                  <span className="text-dark800 ms-1 font-bold">
-                    {"Flliper"}
-                  </span>
+                  <span className="text-dark800 font-bold">{"فلیپر"}</span>
+                  <span className="text-dark800 ms-1 font-bold">{"Flliper"}</span>
                 </RobotName>
                 <Image
                   className="lg:w-full w-3/4"
-                  src="/img/robots/Helinsky.png"
+                  src="/img/robots/FLIPPER.png"
                   alt="Cryptocurrency"
                   width={32}
                   height={32}
@@ -83,19 +75,19 @@ function CurrencyInfo() {
                     <BitcoinCardIcon />
                   </i>
                   {"راه‌اندازی آنلاین"}
-                  </div>
+                </div>
               </ButtonBinex>
             </Link>
           </div>
         </div>
 
-          <Image
-            className="lg:w-1/5 w-3/4 max-w-[200px] mobile:max-w-[150px]"
-            src="/img/cryptocurrency/3.png"
-            alt="Cryptocurrency"
-            width={240}
-            height={240}
-          />
+        <Image
+          className="lg:w-1/5 w-3/4 max-w-[200px] mobile:max-w-[150px]"
+          src="/img/cryptocurrency/3.png"
+          alt="Cryptocurrency"
+          width={240}
+          height={240}
+        />
       </div>
     </>
   );

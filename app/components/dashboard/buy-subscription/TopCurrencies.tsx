@@ -23,13 +23,11 @@ function TopCurrencies() {
                   <div className="flex items-center gap-2">
                     <ExchangeLogo src="/img/binancelogo.png" />
                     <NameExchange parentClassName="flex-row items-center gap-1">
-                      <span className="lg:text-base text-xs text-gray900 font-semibold">
-                        {"Binance"}
-                      </span>
+                      <span className="lg:text-base text-xs text-gray900 font-semibold">{"Binance"}</span>
                     </NameExchange>
                     <div className="flex lg:hidden">
                       <GrowPercentage title="7.2%-" className="text-down text-xs">
-                        <i className="text-down block" style={{transform: 'rotateX(180deg)'}}>
+                        <i className="text-down block" style={{ transform: "rotateX(180deg)" }}>
                           <YesIcon />
                         </i>
                       </GrowPercentage>
@@ -40,30 +38,17 @@ function TopCurrencies() {
               <div className="">
                 <TopCurrenciesContent title="ربات">
                   <div className="flex items-center justify-start gap-2">
-                    <Image
-                      className=""
-                      src="/img/robots/Helinsky.png"
-                      alt=""
-                      width={24}
-                      height={24}
-                    />
+                    <Image className="" src="/img/robots/EDGE3.png" alt="" width={34} height={34} />
                     <RobotName parentClassName="">
-                      <span className="lg:text-sm text-xs text-gray900">
-                        {"اج3"}
-                      </span>
-                      <span className="text-gray800 lg:text-sm text-xs ms-1">
-                        {"(Edge3) "}
-                      </span>
+                      <span className="lg:text-sm text-xs text-gray900">{"اج3"}</span>
+                      <span className="text-gray800 lg:text-sm text-xs ms-1">{"(Edge3) "}</span>
                     </RobotName>
                   </div>
                 </TopCurrenciesContent>
               </div>
             </div>
             <div className="flex flex-col items-center gap-4">
-              <Link
-                href={routes.dashboard.binanceMarket2}
-                className="flex flex-col items-center lg:gap-4 gap-2"
-              >
+              <Link href={routes.dashboard.binanceMarket2} className="flex flex-col items-center lg:gap-4 gap-2">
                 <CryptocurrencyLogo className="lg:h-[70px] lg:w-[70px]">
                   <Image
                     src="/img/cryptocurrency/Cryptocurrency.svg"
@@ -73,12 +58,8 @@ function TopCurrencies() {
                   />
                 </CryptocurrencyLogo>
                 <NameCryptocurrency parentClassName="items-center  justify-center flex-row">
-                  <span className="lg:text-base text-xs text-gray900 font-semibold">
-                    {"BTC"}
-                  </span>
-                  <span className="text-gray800 lg:text-sm text-xs ms-1">
-                    {"(بیتکوین)"}
-                  </span>
+                  <span className="lg:text-base text-xs text-gray900 font-semibold">{"BTC"}</span>
+                  <span className="text-gray800 lg:text-sm text-xs ms-1">{"(بیتکوین)"}</span>
                 </NameCryptocurrency>
               </Link>
               <div className="lg:flex hidden">
@@ -99,9 +80,7 @@ function TopCurrencies() {
                   <div className="flex items-center gap-2">
                     <ExchangeLogo src="/img/binancelogo.png" />
                     <NameExchange parentClassName="flex-row items-center gap-1">
-                      <span className="lg:text-base text-xs text-gray900 font-semibold">
-                        {"Binance"}
-                      </span>
+                      <span className="lg:text-base text-xs text-gray900 font-semibold">{"Binance"}</span>
                     </NameExchange>
                     <div className="flex lg:hidden">
                       <GrowPercentage title="7.2%+" className="text-up text-xs">
@@ -116,30 +95,17 @@ function TopCurrencies() {
               <div className="">
                 <TopCurrenciesContent title="ربات">
                   <div className="flex items-center justify-start gap-2">
-                    <Image
-                      className=""
-                      src="/img/robots/Helinsky.png"
-                      alt=""
-                      width={24}
-                      height={24}
-                    />
+                    <Image className="" src="/img/robots/EXPLORE.png" alt="" width={32} height={32} />
                     <RobotName parentClassName="">
-                      <span className="lg:text-sm text-xs text-gray900">
-                        {"اکسپلور"}
-                      </span>
-                      <span className="text-gray800 lg:text-sm text-xs ms-1">
-                        {"(Explore) "}
-                      </span>
+                      <span className="lg:text-sm text-xs text-gray900">{"اکسپلور"}</span>
+                      <span className="text-gray800 lg:text-sm text-xs ms-1">{"(Explore) "}</span>
                     </RobotName>
                   </div>
                 </TopCurrenciesContent>
               </div>
             </div>
             <div className="flex flex-col items-center gap-4">
-              <Link
-                href={routes.dashboard.binanceMarket2}
-                className="flex flex-col items-center lg:gap-4 gap-2"
-              >
+              <Link href={routes.dashboard.binanceMarket2} className="flex flex-col items-center lg:gap-4 gap-2">
                 <CryptocurrencyLogo className="lg:h-[70px] lg:w-[70px]">
                   <div className="">
                     <Image
@@ -152,12 +118,8 @@ function TopCurrencies() {
                   </div>
                 </CryptocurrencyLogo>
                 <NameCryptocurrency parentClassName="items-center  justify-center flex-row">
-                  <span className="lg:text-base text-xs text-gray900 font-semibold">
-                    {"BTC"}
-                  </span>
-                  <span className="text-gray800 lg:text-sm text-xs ms-1">
-                    {"(بیتکوین)"}
-                  </span>
+                  <span className="lg:text-base text-xs text-gray900 font-semibold">{"BTC"}</span>
+                  <span className="text-gray800 lg:text-sm text-xs ms-1">{"(بیتکوین)"}</span>
                 </NameCryptocurrency>
               </Link>
               <div className="lg:flex hidden">
@@ -178,9 +140,7 @@ function TopCurrencies() {
                   <div className="flex items-center gap-2">
                     <ExchangeLogo src="/img/binancelogo.png" />
                     <NameExchange parentClassName="flex-row items-center gap-1">
-                      <span className="lg:text-base text-xs text-gray900 font-semibold">
-                        {"Binance"}
-                      </span>
+                      <span className="lg:text-base text-xs text-gray900 font-semibold">{"Binance"}</span>
                     </NameExchange>
                     <div className="flex lg:hidden">
                       <GrowPercentage title="7.2%+" className="text-up text-xs">
@@ -195,30 +155,17 @@ function TopCurrencies() {
               <div className="">
                 <TopCurrenciesContent title="ربات">
                   <div className="flex items-center justify-start gap-2">
-                    <Image
-                      className=""
-                      src="/img/robots/Helinsky.png"
-                      alt=""
-                      width={24}
-                      height={24}
-                    />
+                    <Image className="" src="/img/robots/WEB6.png" alt="" width={32} height={32} />
                     <RobotName parentClassName="">
-                      <span className="lg:text-sm text-xs text-gray900">
-                        {"وب6"}
-                      </span>
-                      <span className="text-gray800 lg:text-sm text-xs ms-1">
-                        {"(Web6) "}
-                      </span>
+                      <span className="lg:text-sm text-xs text-gray900">{"وب6"}</span>
+                      <span className="text-gray800 lg:text-sm text-xs ms-1">{"(Web6) "}</span>
                     </RobotName>
                   </div>
                 </TopCurrenciesContent>
               </div>
             </div>
             <div className="flex flex-col items-center gap-4">
-              <Link
-                href={routes.dashboard.binanceMarket2}
-                className="flex flex-col items-center lg:gap-4 gap-2"
-              >
+              <Link href={routes.dashboard.binanceMarket2} className="flex flex-col items-center lg:gap-4 gap-2">
                 <CryptocurrencyLogo className="lg:h-[70px] lg:w-[70px]">
                   <div className="">
                     <Image
@@ -231,12 +178,8 @@ function TopCurrencies() {
                   </div>
                 </CryptocurrencyLogo>
                 <NameCryptocurrency parentClassName="items-center  justify-center flex-row">
-                  <span className="lg:text-base text-xs text-gray900 font-semibold">
-                    {"BTC"}
-                  </span>
-                  <span className="text-gray800 lg:text-sm text-xs ms-1">
-                    {"(بیتکوین)"}
-                  </span>
+                  <span className="lg:text-base text-xs text-gray900 font-semibold">{"BTC"}</span>
+                  <span className="text-gray800 lg:text-sm text-xs ms-1">{"(بیتکوین)"}</span>
                 </NameCryptocurrency>
               </Link>
               <div className="lg:flex hidden">
@@ -257,9 +200,7 @@ function TopCurrencies() {
                   <div className="flex items-center gap-2">
                     <ExchangeLogo src="/img/binancelogo.png" />
                     <NameExchange parentClassName="flex-row items-center gap-1">
-                      <span className="lg:text-base text-xs text-gray900 font-semibold">
-                        {"Binance"}
-                      </span>
+                      <span className="lg:text-base text-xs text-gray900 font-semibold">{"Binance"}</span>
                     </NameExchange>
                     <div className="flex lg:hidden">
                       <GrowPercentage title="7.2%+" className="text-up text-xs">
@@ -274,30 +215,17 @@ function TopCurrencies() {
               <div className="">
                 <TopCurrenciesContent title="ربات">
                   <div className="flex items-center justify-start gap-2">
-                    <Image
-                      className=""
-                      src="/img/robots/Helinsky.png"
-                      alt=""
-                      width={24}
-                      height={24}
-                    />
+                    <Image className="" src="/img/robots/QUANTUM.png" alt="" width={32} height={32} />
                     <RobotName parentClassName="">
-                      <span className="lg:text-sm text-xs text-gray900">
-                        {"کوانتوم"}
-                      </span>
-                      <span className="text-gray800 lg:text-sm text-xs ms-1">
-                        {"(Quantom) "}
-                      </span>
+                      <span className="lg:text-sm text-xs text-gray900">{"کوانتوم"}</span>
+                      <span className="text-gray800 lg:text-sm text-xs ms-1">{"(Quantom) "}</span>
                     </RobotName>
                   </div>
                 </TopCurrenciesContent>
               </div>
             </div>
             <div className="flex flex-col items-center gap-4">
-              <Link
-                href={routes.dashboard.binanceMarket2}
-                className="flex flex-col items-center lg:gap-4 gap-2"
-              >
+              <Link href={routes.dashboard.binanceMarket2} className="flex flex-col items-center lg:gap-4 gap-2">
                 <CryptocurrencyLogo className="lg:h-[70px] lg:w-[70px]">
                   <Image
                     className=""
@@ -308,12 +236,8 @@ function TopCurrencies() {
                   />
                 </CryptocurrencyLogo>
                 <NameCryptocurrency parentClassName="items-center  justify-center flex-row">
-                  <span className="lg:text-base text-xs text-gray900 font-semibold">
-                    {"BTC"}
-                  </span>
-                  <span className="text-gray800 lg:text-sm text-xs ms-1">
-                    {"(بیتکوین)"}
-                  </span>
+                  <span className="lg:text-base text-xs text-gray900 font-semibold">{"BTC"}</span>
+                  <span className="text-gray800 lg:text-sm text-xs ms-1">{"(بیتکوین)"}</span>
                 </NameCryptocurrency>
               </Link>
               <div className="lg:flex hidden">

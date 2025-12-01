@@ -10,7 +10,7 @@ function DisposableCode() {
         <div className="flex items-center justify-between  px-4">
           <Link href={routes.auth.loginFree+"?isEdit=1"} className="">
             <span className="text-blue-light text-xs lg:font-semibold">
-              اصلاح شماره موبایل
+              اصلاح ایمیل
             </span>
           </Link>
           <div className="flex flex-col gap-1">

@@ -15,18 +15,11 @@ function DailyLoss() {
         <Link href={routes.dedicatedCurrency} className="flex items-center justify-between w-full">
           <div className="flex items-center gap-2 h-full">
             <CryptocurrencyLogo>
-              <Image
-                src="/img/cryptocurrency/Cryptocurrency.svg"
-                alt="Cryptocurrency logo"
-                width={40}
-                height={40}
-              />
+              <Image src="/img/cryptocurrency/Cryptocurrency.svg" alt="Cryptocurrency logo" width={40} height={40} />
             </CryptocurrencyLogo>
 
             <NameCryptocurrency parentClassName="flex-col item-end gap-1.5">
-              <span className="text-base text-white font-semibold">
-                {"LTD"}
-              </span>
+              <span className="text-base text-white font-semibold">{"LTD"}</span>
               <span className="text-gray400 text-xs mt-1">{"(بیتکوین)"}</span>
             </NameCryptocurrency>
           </div>
@@ -44,12 +37,9 @@ function DailyLoss() {
             </div>
             <div className="mt-2.5">
               <RobotName parentClassName="">
-                <span className="text-xs text-white font-extralight">
-                  {"آسترا"}
-                </span>
-                <span className="text-gray400 text-xxs ms-1">
-                  {"(Astra) "}
-                </span>
+                <Image className="ml-2" src="/img/robots/ASTRA.png" alt="Cryptocurrency" width={24} height={24} />
+                <span className="text-xs text-white font-extralight">{"آسترا"}</span>
+                <span className="text-gray400 text-xxs ms-1">{"(Astra) "}</span>
               </RobotName>
             </div>
           </div>
