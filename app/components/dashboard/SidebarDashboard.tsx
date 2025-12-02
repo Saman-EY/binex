@@ -101,7 +101,7 @@ const sidebarLinks: TLink[] = [
         link: routes.dashboard.robots.binexRobots,
       },
       {
-        text: "افزودن ربات جدید‌(آنلاین)",
+        text: "فعال کردن ربات جدید(آنلاین)",
         link: routes.dashboard.robots.addRobotOnline,
       },
       {
@@ -149,10 +149,6 @@ const sidebarLinks: TLink[] = [
       {
         text: "واریزهای من",
         link: routes.dashboard.financial.deposits,
-      },
-      {
-        text: "افزودن شماره حساب",
-        link: routes.dashboard.financial.accounts,
       },
     ],
   },

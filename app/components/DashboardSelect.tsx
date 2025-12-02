@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Combobox, Input, InputBase, useCombobox } from "@mantine/core";
 import Image from "next/image";
 import { cn } from "@/utils";
@@ -21,6 +21,9 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
     onDropdownClose: () => combobox.resetSelectedOption(),
   });
   const [value, setValue] = useState("");
+  const [searchValue, setSearchValue] = useState("");
+  const [result, setResult] = useState(options);
+
   const getImage = (title: string) => {
     const src = options.find((q) => q.title === value)?.icon;
     if (title === "همه")
@@ -29,6 +32,19 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
     if (!src) return undefined;
     return <Image src={src} alt={title} width={24} height={24} />;
   };
+
+  useEffect(() => {
+    if (!searchValue) {
+      setResult(options);
+      console.log("**1");
+    } else {
+      console.log("**2");
+      const temp = options.filter((item) => item.title.toLowerCase().includes(searchValue.toLowerCase()));
+      setResult(temp);
+    }
+  }, [searchValue]);
+
+  // console.log("**", options, result);
 
   return (
     <div className="flex flex-col items-start gap-2">
@@ -41,9 +57,17 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
           }}
         >
           <Combobox.Target>
-            <div>
+            <div className="relative !rounded-xl !h-12 !bg-white200">
               {label && <small className={classNameLabel}>{label}:</small>}
-              <InputBase
+              <input
+                value={searchValue}
+                onChange={(e) => setSearchValue(e.target.value)}
+                type="text"
+                onFocus={() => combobox.openDropdown()}
+                className="bg-transparent border rounded-lg absolute z-10 bottom-1/2 translate-y-1/2 right-2 w-[90%] outline-none"
+                placeholder="رمز ارز"
+              />
+              {/* <InputBase
                 value={value}
                 component="button"
                 type="button"
@@ -62,7 +86,7 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
                     {getImage(value)} {value}
                   </div>
                 )) || <Input.Placeholder>{placeholder}</Input.Placeholder>}
-              </InputBase>
+              </InputBase> */}
             </div>
           </Combobox.Target>
 
@@ -79,11 +103,11 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
                   {"هم2ه"}
                 </div>
               </Combobox.Option> */}
-              {options.map((option) => (
+              {result.map((option) => (
                 <Combobox.Option value={option.title} key={option.title}>
                   <div className={cn("flex items-center gap-2", value === option.title && "bg-emerald-50 p-1 rounded")}>
                     {option.icon && <Image src={option.icon} alt={"bank"} width={24} height={30} />}
-                    {option.title}
+                    <span className="font-semibold">{option.title}</span>
                   </div>
                 </Combobox.Option>
               ))}

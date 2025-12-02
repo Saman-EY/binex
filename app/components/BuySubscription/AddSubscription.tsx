@@ -23,19 +23,12 @@ function AddSubscription() {
           <div className="flex items-center justify-center gap-1">
             <div className="">
               <CryptocurrencyLogo>
-                <Image
-                  src="/img/cryptocurrency/Cryptocurrency.svg"
-                  alt="Cryptocurrency logo"
-                  width={30}
-                  height={30}
-                />
+                <Image src="/img/cryptocurrency/Cryptocurrency.svg" alt="Cryptocurrency logo" width={30} height={30} />
               </CryptocurrencyLogo>
             </div>
 
             <NameCryptocurrency parentClassName="items-center gap-1 justify-center flex-row">
-              <span className="text-gray900 text-xs font-semibold">
-                {"BTC"}
-              </span>
+              <span className="text-gray900 text-xs font-semibold">{"BTC"}</span>
               <span className="text-gray800 text-xxs">{"(بیتکوین)"}</span>
             </NameCryptocurrency>
           </div>
@@ -43,9 +36,7 @@ function AddSubscription() {
           <div className="flex items-center justify-center gap-2">
             <ExchangeLogo src={"/img/binancelogo.png"} />
             <NameExchange parentClassName="flex-row items-center gap-1">
-              <span className="text-gray900 text-xs font-semibold">
-                {"Binance"}
-              </span>
+              <span className="text-gray900 text-xs font-semibold">{"Binance"}</span>
               <span className="text-gray800 text-xxs">{"(بایننس)"}</span>
             </NameExchange>
           </div>
@@ -53,9 +44,7 @@ function AddSubscription() {
           <div className="flex items-center justify-center gap-2">
             <ExchangeLogo src={"/img/binancelogo.png"} />
             <NameExchange parentClassName="flex-row items-center gap-1">
-              <span className="text-gray900 text-xs font-semibold">
-                {"Binance"}
-              </span>
+              <span className="text-gray900 text-xs font-semibold">{"Binance"}</span>
               <span className="text-gray800 text-xxs">{"(بایننس)"}</span>
             </NameExchange>
           </div>
@@ -67,9 +56,7 @@ function AddSubscription() {
           </div>
           <div className="col-span-3">
             <div className="flex justify-end items-center gap-2">
-              <span className="text-xs mobile:text-center">
-                {(1200000).toLocaleString()} تومان
-              </span>
+              <span className="text-sm font-semibold mobile:text-center">{(1200000).toLocaleString()} تومان</span>
               <i onClick={remove} className="absolute top-1 left-1 scale-75">
                 <CloseBtn />
               </i>

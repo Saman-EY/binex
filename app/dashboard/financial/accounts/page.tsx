@@ -1,8 +1,6 @@
 "use client";
 
-import AccountCart, {
-  TAccountCart,
-} from "@/app/components/dashboard/account/AccountCart";
+import AccountCart, { TAccountCart } from "@/app/components/dashboard/account/AccountCart";
 import AccountManagement from "@/app/components/dashboard/account/AccountManagement";
 import React, { useEffect, useState } from "react";
 
@@ -31,6 +29,9 @@ function Accounts({}: TAccountsProps) {
   useEffect(() => {
     setCards(allCards);
   }, []);
+
+  return null
+
   return (
     <>
       <div className="grid grid-cols-9 gap-4 m-4">
@@ -41,12 +42,7 @@ function Accounts({}: TAccountsProps) {
           <div className="bg-white rounded-2xl flex flex-col gap-4  px-4 py-4">
             {cards.map((card) => {
               return (
-                <AccountCart
-                  {...card}
-                  onSetDefault={changeDefault}
-                  changeActive={changeActive}
-                  key={card.rec_id}
-                />
+                <AccountCart {...card} onSetDefault={changeDefault} changeActive={changeActive} key={card.rec_id} />
               );
             })}
           </div>

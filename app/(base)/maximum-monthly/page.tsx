@@ -18,7 +18,7 @@ function Page() {
   return (
     <>
       <div className="container mx-auto">
-        <div className="flex  flex-col gap-4 lg:mt-8 mt-4 lg:mx-4">
+        {/* <div className="flex  flex-col gap-4 lg:mt-8 mt-4 lg:mx-4">
           <div className="flex lg:flex-row flex-col lg:justify-between items-center gap-4">
             <Caption className="text-black font-bold lg:text-2xl text-base">
               {"بیشترین سود و زیان 30 روز اخیر  "}
@@ -30,7 +30,7 @@ function Page() {
           </div>
 
           <FilterTable />
-        </div>
+        </div> */}
         <div
           className={clsx(
             "lg:mx-4 mx-0 transition hidden",
