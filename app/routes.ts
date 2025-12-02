@@ -13,6 +13,7 @@ export const routes = {
   maximumMonthly: "/maximum-monthly",
   reviewProfitLoss: "/review-profit-loss",
   learn: "/learn",
+  guide: "/guide",
   faq: "/faq",
   robots: "/robots",
   robotInfo: "/robot-info",

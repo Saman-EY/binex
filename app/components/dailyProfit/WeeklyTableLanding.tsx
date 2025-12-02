@@ -16,13 +16,13 @@ import { routes } from "@/app/routes";
 
 const profits = [1, 2, 3, 4];
 
-function DailyTableLanding() {
+function WeeklyTableLanding() {
   const { matches } = useMediaQuery("(min-width: 1440px)");
   return (
     <>
       <section className="w-[85%] mx-auto ">
         <div className="flex lg:flex-row flex-col lg:justify-between items-start mb-4">
-          <span className="text-lg text-dark font-bold lg:text-xl ">{"بیشترین سود و زیان روزانه"}</span>
+          <span className="text-lg text-dark font-bold lg:text-xl ">{"بیشترین سود و زیان هفتگی"}</span>
           <div className="lg:block hidden">
             <Link href={routes.dailyProfitLoss}>
               <span className="bg-blue text-sm text-white rounded-2xl py-2 px-8 font-medium block">{"مشاهده همه"}</span>
@@ -31,7 +31,7 @@ function DailyTableLanding() {
         </div>
         <div className="lg:flex hidden flex-col gap-4 mb-40">
           {/* daily up table  */}
-          <div className="bg-dark rounded-2xl p-4">
+          <div className="bg-[#011e2d] rounded-2xl p-4">
             <div className="grid grid-cols-4 gap-4">
               {profits.map((item, idx) => {
                 return (
@@ -43,7 +43,7 @@ function DailyTableLanding() {
             </div>
           </div>
           {/* daily down table  */}
-          <div className="bg-dark rounded-2xl p-4">
+          <div className="bg-[#011e2d] rounded-2xl p-4">
             <div className="grid grid-cols-4 gap-4">
               {profits.map((item, idx) => {
                 return (
@@ -160,4 +160,4 @@ function DailyTableLanding() {
   );
 }
 
-export default DailyTableLanding;
+export default WeeklyTableLanding;

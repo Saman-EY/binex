@@ -13,6 +13,7 @@ import SevenDaysFreeBinex from "./components/sevenDaysFreeBinex/SevenDaysFreeBin
 import ThirtyDaysProfitLoss from "./components/ThirtyDaysProfitLoss/ThirtyDaysProfitLoss";
 import BuySubscription from "./components/BuySubscription/BuySubscription";
 import Caption from "./components/global/Caption";
+import WeeklyTableLanding from "./components/dailyProfit/WeeklyTableLanding";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <main>
         <Intro />
         <DailyTableLanding />
+        <WeeklyTableLanding />
         <BuiltArtificialIntelligence />
         <ThirtyDaysProfitLoss />
         <span className={"my-8 flex"} />

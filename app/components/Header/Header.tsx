@@ -34,25 +34,16 @@ function Header() {
     signed: false,
   };
   const ref = useRef<HTMLInputElement | null>(null);
-  const path = usePathname()
+  const path = usePathname();
 
   return (
     <>
       <div className="sticky top-0 z-[999] max-h-[64px]">
         <div className="flex items-center justify-between drawer bg-white">
-          <input
-            id="my-drawer"
-            type="checkbox"
-            className="drawer-toggle"
-            ref={ref}
-          />
+          <input id="my-drawer" type="checkbox" className="drawer-toggle" ref={ref} />
           <div className="drawer-content w-full  shadow-xl z-[2]">
             <div className="lg:container ~lg:px-4 flex  items-center lg:py-3 h-[54px] lg:h-[65px]">
-              <label
-                className="block lg:hidden drawer-button"
-                htmlFor="my-drawer"
-                role="button"
-              >
+              <label className="block lg:hidden drawer-button" htmlFor="my-drawer" role="button">
                 <HamburgerIcon />
               </label>
               <div className="ms-auto lg:ml-4 lg:mr-0 scale-[0.5] lg:scale-[0.9]">
@@ -66,8 +57,9 @@ function Header() {
                       href={nav.link}
                       className={cn(
                         "relative text-dark-black text-xs xl:text-sm hover:text-blue transition-all hover:after:opacity-100 font-semibold text-nowrap",
-                        'after:absolute after:-bottom-[115%] after:inset-x-0 after:h-[2px] after:bg-blue after:content-[""] after:opacity-0 after:transition-all'
-                      , path.indexOf(nav.link) > -1 && 'text-blue after:opacity-100')}
+                        'after:absolute after:-bottom-[115%] after:inset-x-0 after:h-[2px] after:bg-blue after:content-[""] after:opacity-0 after:transition-all',
+                        path.indexOf(nav.link) > -1 && "text-blue after:opacity-100"
+                      )}
                     >
                       {nav.text}
                     </Link>
@@ -76,19 +68,11 @@ function Header() {
               </div>
 
               <Search />
-              {user.signed ? (
-                <HeaderSigned name={user.name} />
-              ) : (
-                <HeaderNotSigned />
-              )}
+              {user.signed ? <HeaderSigned name={user.name} /> : <HeaderNotSigned />}
             </div>
           </div>
           <div className="drawer-side z-[1]  lg:top-[65px] top-[54px]">
-            <label
-              htmlFor="my-drawer"
-              aria-label="close sidebar"
-              className="drawer-overlay"
-            ></label>
+            <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
             <div className="bg-white w-48 h-full p-4 overflow-hidden">
               <div className="flex flex-col divide-y">
                 <div className="mb-3">
@@ -105,9 +89,7 @@ function Header() {
                     >
                       <div className="flex items-center gap-2 py-3 text-gray900 hover:text-blue fill-gray900 hover:fill-blue">
                         <i className="">{link.icon}</i>
-                        <small className="text-xs text-nowrap">
-                          {link.text}
-                        </small>
+                        <small className="text-xs text-nowrap">{link.text}</small>
                       </div>
                     </Link>
                   );
@@ -141,7 +123,11 @@ const navLinks: THeaderNav[] = [
     link: routes.buySubscription,
   },
   {
-    text: "آموزش استفاده از باینکس ",
+    text: "آموزش استفاده از باینکس",
+    link: routes.guide,
+  },
+  {
+    text: "توصیه نامه",
     link: routes.learn,
   },
   {
@@ -188,6 +174,11 @@ const sideLinks: THeaderNav[] = [
   },
   {
     text: "آموزش استفاده از باینکس ",
+    link: routes.guide,
+    icon: <BitcoinIcon />,
+  },
+  {
+    text: "توصیه نامه",
     link: routes.learn,
     icon: <BitcoinIcon />,
   },

@@ -40,7 +40,7 @@ function Footer() {
                       </Link>
                     </div>
                     <div className="flex flex-col lg:items-start  items-center lg:ms-36 ms-0 lg:gap-2 gap-3 mobile:mt-4">
-                      <Link href={routes.learn} className="text-white hover:text-blue transition-all text-sm">
+                      <Link href={routes.guide} className="text-white hover:text-blue transition-all text-sm">
                         آموزش استفاده از باینکس
                       </Link>
                       <Link href={routes.faq} className="text-white hover:text-blue transition-all text-sm">

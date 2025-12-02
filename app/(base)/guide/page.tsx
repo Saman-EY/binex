@@ -6,7 +6,7 @@ function Page() {
     <>
       <div className="container lg:mx-auto px-4  flex flex-col items-center justify-center gap-4 my-4">
         <div className="">
-          <Caption className="text-black text-base lg:text-2xl font-bold ">{"توصیه نامه استفاده از باینکس"}</Caption>
+          <Caption className="text-black text-base lg:text-2xl font-bold ">آموزش استفاده از باینکس</Caption>
         </div>
         <div className="gap-10 flex flex-col">
           <div className="gap-4">
@@ -32,7 +32,7 @@ function Page() {
           </div>
           <div className="gap-4 flex flex-col lg:items-start items-center ">
             <Caption className="text-black lg:text-xl text-base font-medium  lg:text-right text-center">
-              {" توصیه نامه باینکس"}
+              آموزش استفاده باینکس
             </Caption>
             <p className="text-justify lg:text-sm text-xs text-gray900 !leading-6">
               در معنای لغوی، منابع انسانی (Human Resources) به تمامی نیروهای کار یک مجموعه یا سازمان گفته می‌شود. در
