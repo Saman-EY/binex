@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
- 
+
 const config: Config = {
   daisyui: {
     themes: ["light"],
@@ -71,12 +71,11 @@ const config: Config = {
       backgroundImage: {
         "gradient-green": "linear-gradient(90deg, var(--dark100) 60%, white )",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
         sans: ["var(--font-yekan)"],
-        lily: ["var(--font-gothic)"],
+        vijaya: ["var(--font-vijaya)"],
       },
     },
   },

@@ -105,6 +105,7 @@ async function DashboardOrderTable() {
                   </td>
                   <td className="text-center">
                     <RobotName parentClassName="flex-row items-center gap-1 justify-center">
+                      <Image className="" src={order.robot.image} alt="robot logo" width={35} height={35} />
                       <span className="text-xs text-gray900">{order.robot.name}</span>
                       <span className="text-gray800 text-xs">({order.robot.name_fa})</span>
                     </RobotName>

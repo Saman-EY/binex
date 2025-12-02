@@ -22,7 +22,7 @@ function DailyTableLanding() {
     <>
       <section className="w-[85%] mx-auto ">
         <div className="flex lg:flex-row flex-col lg:justify-between items-start mb-4">
-          <span className="text-md text-dark font-bold lg:text-lg ">{"بیشترین سود و زیان روزانه"}</span>
+          <span className="text-lg text-dark font-bold lg:text-xl ">{"بیشترین سود و زیان روزانه"}</span>
           <div className="lg:block hidden">
             <Link href={routes.dailyProfitLoss}>
               <span className="bg-blue text-sm text-white rounded-2xl py-2 px-8 font-medium block">{"مشاهده همه"}</span>
@@ -97,6 +97,7 @@ function DailyTableLanding() {
                     </div>
                     <div className="mt-1">
                       <RobotName parentClassName="">
+                        <Image className="size-7 ml-1" width={50} height={50} src="/img/robots/PRIME.png" alt="" />
                         <span className="text-xs text-white">{"پرایم"}</span>
                         <span className="text-gray400 text-xs ms-1">{"(Prime) "}</span>
                       </RobotName>
@@ -139,6 +140,7 @@ function DailyTableLanding() {
                     </div>
                     <div className="mt-1">
                       <RobotName parentClassName="">
+                        <Image className="size-7 ml-1" width={50} height={50} src="/img/robots/NUCLEUS.png" alt="" />
                         <span className="text-xs text-white">{"نوکلئوس"}</span>
                         <span className="text-gray400 text-xs ms-1">{"(Nucleus) "}</span>
                       </RobotName>

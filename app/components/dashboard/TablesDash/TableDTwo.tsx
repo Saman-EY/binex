@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import TimeFrame from "@/app/components/global/TimeFrame";
 import UpDownBtn from "@/app/components/global/UpDownBtn";
@@ -10,14 +10,14 @@ import Link from "next/link";
 import { routes } from "@/app/routes";
 import { useRouter } from "next/navigation";
 function TableDTwo() {
-  const r = useRouter()
+  const r = useRouter();
   const handleRowClick = () => {
     r.push(routes.dashboard.binanceMarket2);
-  }  
+  };
   return (
     <>
       {/* desktop */}
-      <div className=" hidden lg:block" data-table={'DTwo'}>
+      <div className=" hidden lg:block" data-table={"DTwo"}>
         <table className="table block  border-separate border-spacing-y-2">
           {/* head */}
           <thead>
@@ -25,9 +25,7 @@ function TableDTwo() {
               <th className="text-xs text-gray900 pt-4 pb-4 text-center font-semibold bg-head-table-color rounded-r-2xl pl-12">
                 نماد و نام ارز
               </th>
-              <th className="text-xs text-gray900 pt-4 pb-4 text-center font-semibold bg-head-table-color">
-                ربات
-              </th>
+              <th className="text-xs text-gray900 pt-4 pb-4 text-center font-semibold bg-head-table-color">ربات</th>
               <th className="text-xs text-gray900 pt-4 pb-4 text-center font-semibold bg-head-table-color">
                 تایم فریم{" "}
               </th>
@@ -54,18 +52,15 @@ function TableDTwo() {
                     </div>
                   </CryptocurrencyLogo>
                   <NameCryptocurrency parentClassName="items-start  justify-start flex gap-1">
-                    <span className="lg:text-xs text-sm text-gray900 font-bold">
-                      {"BTC"}
-                    </span>
-                    <span className="text-gray800 lg:text-xs text-xs">
-                      {"(بیتکوین)"}
-                    </span>
+                    <span className="lg:text-xs text-sm text-gray900 font-bold">{"BTC"}</span>
+                    <span className="text-gray800 lg:text-xs text-xs">{"(بیتکوین)"}</span>
                   </NameCryptocurrency>
                 </Link>
               </td>
 
               <td className="text-center bg-white100">
                 <div className="flex flex-row items-center gap-1 justify-center">
+                  <Image className="" src="/img/robots/ALGORITHM.png" alt="binex Logo" width={40} height={40} />
                   <span className="text-xs text-gray900">{"الگوریتم"}</span>
                   <span className="text-gray800 text-xs">{"(Algorithm) "}</span>
                 </div>
@@ -95,18 +90,15 @@ function TableDTwo() {
                     </div>
                   </CryptocurrencyLogo>
                   <NameCryptocurrency parentClassName="items-start  justify-start flex gap-1">
-                    <span className="lg:text-xs text-sm text-gray900 font-bold">
-                      {"BTC"}
-                    </span>
-                    <span className="text-gray800 lg:text-xs text-xs">
-                      {"(بیتکوین)"}
-                    </span>
+                    <span className="lg:text-xs text-sm text-gray900 font-bold">{"BTC"}</span>
+                    <span className="text-gray800 lg:text-xs text-xs">{"(بیتکوین)"}</span>
                   </NameCryptocurrency>
                 </Link>
               </td>
 
               <td className="text-center bg-white100">
                 <RobotName parentClassName="flex-row items-center gap-1 justify-center">
+                  <Image className="" src="/img/robots/NOVA.png" alt="binex Logo" width={40} height={40} />
                   <span className="text-xs text-gray900">{"نوا"}</span>
                   <span className="text-gray800 text-xs">{"(Nova) "}</span>
                 </RobotName>

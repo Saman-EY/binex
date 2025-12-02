@@ -34,8 +34,8 @@ function OrderHistoryBox() {
         </div>
         <div className="flex flex-col px-3 pb-0.5 pt-0">
           <div className="flex w-full justify-between items-center  border-b border-line pb-2">
-          <Link href={routes.dashboard.binanceMarket2} className="flex items-center gap-2">
-          <CryptocurrencyLogo className="!p-[2px] !h-11 !w-11">
+            <Link href={routes.dashboard.binanceMarket2} className="flex items-center gap-2">
+              <CryptocurrencyLogo className="!p-[2px] !h-11 !w-11">
                 <div className="">
                   <Image
                     className=""
@@ -47,29 +47,26 @@ function OrderHistoryBox() {
                 </div>
               </CryptocurrencyLogo>
               <NameCryptocurrency parentClassName="flex-col items-end">
-                <span className="text-[18px] text-dark-black font-semibold">
-                  {"LTD"}
-                </span>
+                <span className="text-[18px] text-dark-black font-semibold">{"LTD"}</span>
                 <span className="text-gray800 text-xs  mt-1">{"Binance"}</span>
               </NameCryptocurrency>
             </Link>
             <div className="flex flex-col gap-2 items-end justify-end">
               <div className="flex items-center gap-1 ">
-                <TimeFrame className="text-sm font-semibold text-dark ">
-                  {"1h"}
-                </TimeFrame>
-                <UpDownBtn className="text-nowrap !text-xxs px-8 !py-2 !bg-up">
-                  {"موفق"}
-                </UpDownBtn>
+                <TimeFrame className="text-sm font-semibold text-dark ">{"1h"}</TimeFrame>
+                <UpDownBtn className="text-nowrap !text-xxs px-8 !py-2 !bg-up">{"موفق"}</UpDownBtn>
               </div>
               <div className="">
                 <RobotName parentClassName="flex ">
-                  <span className="text-xs text-dark-black font-semibold">
-                    {"نکسوس"}
-                  </span>
-                  <span className="text-gray800 text-xxs ms-1">
-                    {"(Nexus) "}
-                  </span>
+                  <Image
+                    className="object-cover"
+                    src={"/img/robots/NEXUS.png"}
+                    alt="robot logo"
+                    width={38}
+                    height={38}
+                  />
+                  <span className="text-xs text-dark-black font-semibold">{"نکسوس"}</span>
+                  <span className="text-gray800 text-xxs ms-1">{"(Nexus) "}</span>
                 </RobotName>
               </div>
             </div>
@@ -89,78 +86,64 @@ function OrderHistoryBox() {
 
         <div className="flex items-center justify-between flex-col w-full  p-3 pt-0">
           <div className="w-full">
-            <ProfitLossContent
-                parentclassName="flex-row items-center justify-between gap-2 w-full py-1"
-                title="پوزیشن"
-            >
+            <ProfitLossContent parentclassName="flex-row items-center justify-between gap-2 w-full py-1" title="پوزیشن">
               <TextInfo parentClassName="flex-row items-center justify-center gap-[2px]">
-                <span className="text-xs text-success font-bold">
-                  {"Buy"}
-                </span>
+                <span className="text-xs text-success font-bold">{"Buy"}</span>
               </TextInfo>
             </ProfitLossContent>
           </div>
           <div className="w-full">
             <ProfitLossContent
-                parentclassName="flex-row items-center justify-between gap-2 w-full py-1"
-                title="مبلغ شروع معامله"
+              parentclassName="flex-row items-center justify-between gap-2 w-full py-1"
+              title="مبلغ شروع معامله"
             >
               <TextInfo parentClassName="flex-row items-center justify-center gap-[2px]">
-                <span className="text-xs text-gray900 font-bold">
-                  {"150"}
-                </span>
-                <span className="text-gray800 text-[11px]">{"(تتر)"}</span>
-
-              </TextInfo>
-            </ProfitLossContent>
-          </div>
-          <div className="w-full">
-            <ProfitLossContent
-                parentclassName="flex-row items-center justify-between gap-2 w-full py-1"
-                title="قیمت شروع"
-            >
-              <TextInfo parentClassName="flex-row items-center justify-center gap-[2px]">
-                <span className="text-xs text-gray900 font-bold">
-                  {"13.25"}
-                </span>
+                <span className="text-xs text-gray900 font-bold">{"150"}</span>
                 <span className="text-gray800 text-[11px]">{"(تتر)"}</span>
               </TextInfo>
             </ProfitLossContent>
           </div>
           <div className="w-full">
             <ProfitLossContent
-                parentclassName="flex-row items-center justify-between gap-2 w-full py-1"
-                title="قیمت پایان"
+              parentclassName="flex-row items-center justify-between gap-2 w-full py-1"
+              title="قیمت شروع"
             >
               <TextInfo parentClassName="flex-row items-center justify-center gap-[2px]">
-                <span className="text-xs text-gray900 font-bold">
-                  {"12.25"}
-                </span>
+                <span className="text-xs text-gray900 font-bold">{"13.25"}</span>
                 <span className="text-gray800 text-[11px]">{"(تتر)"}</span>
               </TextInfo>
             </ProfitLossContent>
           </div>
           <div className="w-full">
             <ProfitLossContent
-                parentclassName="flex-row items-center justify-between gap-2 w-full py-1"
-                title="درصد سود و زیان"
+              parentclassName="flex-row items-center justify-between gap-2 w-full py-1"
+              title="قیمت پایان"
+            >
+              <TextInfo parentClassName="flex-row items-center justify-center gap-[2px]">
+                <span className="text-xs text-gray900 font-bold">{"12.25"}</span>
+                <span className="text-gray800 text-[11px]">{"(تتر)"}</span>
+              </TextInfo>
+            </ProfitLossContent>
+          </div>
+          <div className="w-full">
+            <ProfitLossContent
+              parentclassName="flex-row items-center justify-between gap-2 w-full py-1"
+              title="درصد سود و زیان"
             >
               <TextInfo parentClassName="flex-row items-center justify-center gap-[2px]">
                 <span className="text-sm text-down font-semibold flex items-center gap-2">
-                 {"4.05%"}- <Chevron negative={true}/>
+                  {"4.05%"}- <Chevron negative={true} />
                 </span>
               </TextInfo>
             </ProfitLossContent>
           </div>
           <div className="w-full">
             <ProfitLossContent
-                parentclassName="flex-row items-center justify-between gap-2 w-full py-1"
-                title="مبلغ سود و زیان"
+              parentclassName="flex-row items-center justify-between gap-2 w-full py-1"
+              title="مبلغ سود و زیان"
             >
               <TextInfo parentClassName="flex-row items-center justify-center gap-[2px]">
-                <span className="text-xs text-down font-semibold">
-                  {"1"}
-                </span>
+                <span className="text-xs text-down font-semibold">{"1"}</span>
                 <span className="text-gray800 text-[11px]">{"(تتر)"}</span>
               </TextInfo>
             </ProfitLossContent>

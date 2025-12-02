@@ -19,15 +19,15 @@ function BinxRobots() {
         <div className="flex flex-col gap-y-6 lg:gap-32">
           {/* Helinsky robot1 */}
           <div className="bg-white flex flex-col lg:relative rounded-2xl lg:shadow-binex py-6 lg:px-12 px-4  gap-6">
-            <div className="lg:absolute inset-0 -right-12 z-50 max-w-max mx-auto lg:mx-0">
+            <Link href={"/robot-info/neo"} className="lg:absolute inset-0 -right-12 z-50 max-w-max mx-auto lg:mx-0">
               <Image
                 className="sm:scale-100 scale-[80%]"
-                src="/img/robots/Helinsky.png"
+                src="/img/robots/NEURON.png"
                 alt="kucoin logo"
                 width={250}
                 height={212}
               />
-            </div>
+            </Link>
             <div className="bg-blue-light backdrop-blur-[-1px] blur-[55px] absolute z-40 rounded-full lg:flex hidden  top-0 -right-5 lg:h-32 lg:w-32 "></div>
             <div className="bg-pink backdrop-blur-[-1px] blur-[55px] absolute z-40 rounded-full lg:flex hidden  top-20 right-8 h-40 w-40"></div>
             <div className="bg-green100 backdrop-blur-[-1px] blur-[60px] absolute z-40 rounded-full lg:flex hidden  -bottom-16 -right-10 lg:h-32 lg:w-32 "></div>
@@ -38,12 +38,8 @@ function BinxRobots() {
                   <div className="lg:col-span-8 col-span-12">
                     <div className="flex flex-col lg:items-start lg:justify-between items-center justify-center h-full gap-3">
                       <div className="flex items-center gap-1">
-                        <span className="lg:text-xl text-base text-dark font-medium">
-                        نورون
-                        </span>
-                        <span className="text-3xl text-dark font-bold">
-                        Neuron
-                        </span>
+                        <span className="lg:text-xl text-base text-dark font-medium">نورون</span>
+                        <span className="text-3xl text-dark font-bold">Neuron</span>
                       </div>
                       <div className="bg-green100 rounded-2xl flex items-center justify-between lg:px-8 lg:py-5 py-4 px-3 w-full ">
                         <div className="flex items-center justify-between ">
@@ -52,14 +48,10 @@ function BinxRobots() {
                               <ChartIcon />
                             </i>
                           </div>
-                          <span className="text-white lg:text-base text-xs font-medium">
-                            بیشترین سود ۳۰ روز اخیر
-                          </span>
+                          <span className="text-white lg:text-base text-xs font-medium">بیشترین سود ۳۰ روز اخیر</span>
                         </div>
                         <div className="">
-                          <span className="text-white lg:text-lg text-base font-bold">
-                            10.59%+
-                          </span>
+                          <span className="text-white lg:text-lg text-base font-bold">10.59%+</span>
                         </div>
                       </div>
                     </div>
@@ -101,12 +93,8 @@ function BinxRobots() {
                   <div className="lg:col-span-8 col-span-12">
                     <div className="flex flex-col lg:items-start lg:justify-start items-center justify-center gap-3">
                       <div className="flex items-center gap-1">
-                        <span className="lg:text-xl text-base text-dark font-medium">
-                        کوانتوم
-                        </span>
-                        <span className="text-3xl text-dark font-bold">
-                        Quantom
-                        </span>
+                        <span className="lg:text-xl text-base text-dark font-medium">کوانتوم</span>
+                        <span className="text-3xl text-dark font-bold">Quantom</span>
                       </div>
                       <div className="bg-green100 rounded-2xl flex items-center justify-between lg:px-8 lg:py-5 py-4 px-3 w-full ">
                         <div className="flex items-center justify-between ">
@@ -115,14 +103,10 @@ function BinxRobots() {
                               <ChartIcon />
                             </i>
                           </div>
-                          <span className="text-white lg:text-base text-xs font-medium">
-                            بیشترین سود ۳۰ روز اخیر
-                          </span>
+                          <span className="text-white lg:text-base text-xs font-medium">بیشترین سود ۳۰ روز اخیر</span>
                         </div>
                         <div className="">
-                          <span className="text-white lg:text-lg text-base font-bold">
-                            10.59%+
-                          </span>
+                          <span className="text-white lg:text-lg text-base font-bold">10.59%+</span>
                         </div>
                       </div>
                     </div>
@@ -155,15 +139,15 @@ function BinxRobots() {
               </div>
               <div className="lg:col-span-1 col-span-3"></div>
             </div>
-            <div className="lg:absolute -top-12 -left-9 z-50 max-w-max mx-auto lg:mx-0">
+            <Link href={"/robot-info/neo"} className="lg:absolute -top-12 -left-9 z-50 max-w-max mx-auto lg:mx-0">
               <Image
                 className="sm:scale-100 scale-[80%]"
-                src="/img/robots/robot2.png"
+                src="/img/robots/QUANTUM.png"
                 alt="kucoin logo"
-                width={200}
-                height={250}
+                width={250}
+                height={212}
               />
-            </div>
+            </Link>
             <div className="bg-pink backdrop-blur-[-1px] blur-[55px] absolute z-40 rounded-full lg:flex hidden top-0 -left-5 h-32 w-32"></div>
             <div className="bg-green100 backdrop-blur-[-1px] blur-[55px] absolute z-40 rounded-full lg:flex hidden -bottom-20 -left-0 h-40 w-40"></div>
             <div className="bg-blue-light backdrop-blur-[-1px] blur-[60px] absolute z-40 rounded-full lg:flex hidden -bottom-10 -left-20 h-32 w-32"></div>
@@ -171,15 +155,15 @@ function BinxRobots() {
 
           {/* robot3 */}
           <div className="bg-white flex flex-col lg:relative rounded-2xl lg:shadow-binex py-6 lg:px-12 px-4 gap-6">
-            <div className="lg:absolute  -right-12 z-50 max-w-max top-5 mx-auto lg:mx-0">
+            <Link href={"/robot-info/neo"} className="lg:absolute  -right-12 z-50 max-w-max top-5 mx-auto lg:mx-0">
               <Image
                 className="sm:scale-100 scale-[80%]"
-                src="/img/robots/robot3.png"
+                src="/img/robots/STARLET.png"
                 alt="kucoin logo"
-                width={200}
+                width={250}
                 height={212}
               />
-            </div>
+            </Link>
             <div className="bg-green100 backdrop-blur-[-1px] blur-[55px] absolute z-40 rounded-full lg:flex hidden top-0 -right-5 h-32 w-32"></div>
             <div className="bg-blue-light backdrop-blur-[-1px] blur-[55px] absolute z-40 rounded-full lg:flex hidden top-20 right-8 h-40 w-40"></div>
             <div className="bg-pink backdrop-blur-[-1px] blur-[60px] absolute z-40 rounded-full lg:flex hidden -bottom-10 -right-10 h-32 w-32"></div>
@@ -190,12 +174,8 @@ function BinxRobots() {
                   <div className="lg:col-span-8 col-span-12">
                     <div className="flex flex-col lg:items-start lg:justify-start items-center justify-center gap-3">
                       <div className="flex items-center gap-1">
-                        <span className="lg:text-xl text-base text-dark font-medium">
-                        استارلت
-                        </span>
-                        <span className="text-3xl text-dark font-bold">
-                        Starlet
-                        </span>
+                        <span className="lg:text-xl text-base text-dark font-medium">استارلت</span>
+                        <span className="text-3xl text-dark font-bold">Starlet</span>
                       </div>
                       <div className="bg-green100 rounded-2xl flex items-center justify-between lg:px-8 lg:py-5 py-4 px-3 w-full">
                         <div className="flex items-center justify-between ">
@@ -204,14 +184,10 @@ function BinxRobots() {
                               <ChartIcon />
                             </i>
                           </div>
-                          <span className="text-white lg:text-sm text-xs font-medium">
-                            بیشترین سود ۳۰ روز اخیر
-                          </span>
+                          <span className="text-white lg:text-sm text-xs font-medium">بیشترین سود ۳۰ روز اخیر</span>
                         </div>
                         <div className="">
-                          <span className="text-white lg:text-lg text-base font-bold">
-                            10.59%+
-                          </span>
+                          <span className="text-white lg:text-lg text-base font-bold">10.59%+</span>
                         </div>
                       </div>
                     </div>

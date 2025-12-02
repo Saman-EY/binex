@@ -21,8 +21,8 @@ function ThirtyDaysProfitLoss() {
     <>
       <div className="lg:container lg:mx-auto">
         <div className="flex lg:flex-row flex-col items-center justify-between mx-4 mt-9">
-          <Caption className="text-dark font-bold lg:text-xl text-base mb-4 lg:mb-0">
-            {"بیشترین سود و زیان 30 روز اخیر"}
+          <Caption className="text-dark font-bold  mb-4 lg:mb-0">
+            <span className="text-xl">{"بیشترین سود و زیان 30 روز اخیر"}</span>
           </Caption>
           <div className="lg:w-1/5 w-full">
             <ProfitLossFilter isFirst={isShiftingToFirst} setIsFirst={changeTab} />

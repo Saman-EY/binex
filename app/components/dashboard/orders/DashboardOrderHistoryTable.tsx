@@ -32,17 +32,13 @@ function DashboardOrderHistoryTable() {
               <th className="text-xs text-dark px-0 pt-4 pb-4 text-center font-semibold bg-head-table-color">
                 قیمت پایان
               </th>
-              <th className="text-xs text-dark px-0 pt-4 pb-4 text-center font-semibold bg-head-table-color">
-                صرافی
-              </th>
-              <th className="text-xs text-dark px-0 pt-4 pb-4 text-center font-semibold bg-head-table-color">
-                ربات
-              </th>
+              <th className="text-xs text-dark px-0 pt-4 pb-4 text-center font-semibold bg-head-table-color">صرافی</th>
+              <th className="text-xs text-dark px-0 pt-4 pb-4 text-center font-semibold bg-head-table-color">ربات</th>
               <th className="text-xs text-dark px-0 pt-4 pb-4 text-center font-semibold bg-head-table-color px-2">
                 تایم فریم
               </th>
               <th className="text-xs text-dark px-0 pt-4 pb-4 text-center font-semibold bg-head-table-color">
-                درصد  سود و زیان
+                درصد سود و زیان
               </th>
               <th className="text-xs text-dark px-0 pt-4 pb-4 text-center font-semibold bg-head-table-color">
                 مبلغ سود و زیان
@@ -61,20 +57,11 @@ function DashboardOrderHistoryTable() {
                   className="flex gap-[2px] text-center items-center justify-center"
                 >
                   <CryptocurrencyLogo>
-                    <Image
-                      src="/img/cryptocurrency/2.svg"
-                      alt="Cryptocurrency logo"
-                      width={30}
-                      height={30}
-                    />
+                    <Image src="/img/cryptocurrency/2.svg" alt="Cryptocurrency logo" width={30} height={30} />
                   </CryptocurrencyLogo>
                   <NameCryptocurrency parentClassName="items-center  justify-center flex-col gap-1">
-                    <span className="lg:text-xs text-sm text-gray900 font-semibold">
-                      {"BTC"}
-                    </span>
-                    <span className="text-gray800 lg:text-xs text-xs">
-                      {"(بیتکوین)"}
-                    </span>
+                    <span className="lg:text-xs text-sm text-gray900 font-semibold">{"BTC"}</span>
+                    <span className="text-gray800 lg:text-xs text-xs">{"(بیتکوین)"}</span>
                   </NameCryptocurrency>
                 </Link>
               </td>
@@ -86,17 +73,13 @@ function DashboardOrderHistoryTable() {
               </td>
               <td>
                 <TextInfo parentClassName="flex-row items-center justify-center gap-[2px]">
-                  <span className="text-xs text-dark-black font-semibold">
-                    {"14.41"}
-                  </span>
+                  <span className="text-xs text-dark-black font-semibold">{"14.41"}</span>
                   <span className="text-gray800 text-xs">{"(تتر)"}</span>
                 </TextInfo>
               </td>
               <td>
                 <TextInfo parentClassName="flex-row items-center justify-center gap-[2px]">
-                  <span className="text-xs text-dark-black font-semibold">
-                    {"14.56"}
-                  </span>
+                  <span className="text-xs text-dark-black font-semibold">{"14.56"}</span>
                   <span className="text-gray800 text-xs">{"(تتر)"}</span>
                 </TextInfo>
               </td>
@@ -109,23 +92,26 @@ function DashboardOrderHistoryTable() {
               </td>
               <td className="text-center">
                 <RobotName parentClassName="flex-row items-center gap-1 justify-center">
+                  <Image
+                    className="object-cover"
+                    src={"/img/robots/INFINIT.png"}
+                    alt="robot logo"
+                    width={38}
+                    height={38}
+                  />
                   <span className="text-xs text-gray900">{"اینفینیت"}</span>
                   <span className="text-gray800 text-xs">{"(Infinit) "}</span>
                 </RobotName>
               </td>
               <td className="text-center">
-                <TimeFrame className="text-xs text-gray900 font-semibold ">
-                  {"1h"}
-                </TimeFrame>
+                <TimeFrame className="text-xs text-gray900 font-semibold ">{"1h"}</TimeFrame>
               </td>
               <td className="text-center">
                 <UpDownBtn>{"1.2%+"}</UpDownBtn>
               </td>
               <td>
                 <TextInfo parentClassName="flex-row items-center justify-center gap-[2px]">
-                  <span className="text-xs text-up font-semibold">
-                    {"14.41"}
-                  </span>
+                  <span className="text-xs text-up font-semibold">{"14.41"}</span>
                   <span className="text-gray800 text-xs">{"(تتر)"}</span>
                 </TextInfo>
               </td>

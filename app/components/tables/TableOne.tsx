@@ -71,11 +71,13 @@ const TableOne = ({ arrow, forceSign }: TTableOneProps) => {
                     </UpDownBtn>
                   </td>
                   <td>
-                    <RobotName parentClassName="">
-                      <Image className="size-7 ml-2" width={50} height={50} src="/img/robots/PRIME.png" alt="" />
-                      <span className="text-xs text-gray900">{"پرایم"}</span>
-                      <span className="text-gray800 text-xs ms-1">{"(Prime) "}</span>
-                    </RobotName>
+                    <Link href={"/robot-info/neo"}>
+                      <RobotName parentClassName="">
+                        <Image className="size-7 ml-2" width={50} height={50} src="/img/robots/PRIME.png" alt="" />
+                        <span className="text-xs text-gray900">{"پرایم"}</span>
+                        <span className="text-gray800 text-xs ms-1">{"(Prime) "}</span>
+                      </RobotName>
+                    </Link>
                   </td>
                   <td>
                     <Link href={routes.dedicatedCurrency}>
@@ -127,6 +129,7 @@ const TableOne = ({ arrow, forceSign }: TTableOneProps) => {
                 </div>
                 <div className="mt-1">
                   <RobotName parentClassName="">
+                    <Image className="size-7 ml-2" width={50} height={50} src="/img/robots/ASTRA.png" alt="" />
                     <span className="text-xs text-gray900">{"آسترا"}</span>
                     <span className="text-blue-light-2 text-xxs ms-1">{"(Astra) "}</span>
                   </RobotName>

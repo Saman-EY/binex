@@ -121,6 +121,7 @@ const TableOneDark = (props: TTableOneDarkProps) => {
                 </div>
                 <div className="mt-1">
                   <RobotName parentClassName="">
+                    <Image className="size-7" width={50} height={50} src="/img/robots/EDGE3.png" alt="" />
                     <span className="text-xs text-white">{"اج3"}</span>
                     <span className="text-gray400 text-xs ms-1">{"(Edge3) "}</span>
                   </RobotName>

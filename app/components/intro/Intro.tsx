@@ -39,7 +39,7 @@ function Intro() {
               <ButtonBinex className="px-0">{"ثبت نام"}</ButtonBinex>
             </Link>
           </div>
-          <h6 className="text-5xl font-lily text-center mt-5">Number Never Lie</h6>
+          <h6 className="text-4xl sm:text-5xl md:text-6xl font-vijaya text-center mt-5">Number Never Lie</h6>
         </div>
 
         <div className="flex items-end">
