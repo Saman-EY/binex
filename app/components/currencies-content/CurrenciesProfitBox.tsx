@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import CurrenciesCotnent from "./CurrenciesCotnent";
 import Caption from "../global/Caption";
@@ -8,9 +9,16 @@ function CurrenciesProfitBox() {
   return (
     <>
       <div className="flex-col gap-3 flex">
-        <div className="flex items-center justify-between bg-gray-100 rounded-2xl relative px-4 py-3">
+        <div
+          onClick={() => {
+            document.getElementById("toScroll")?.scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
+          className="flex items-center justify-between cursor-pointer bg-gray-100 rounded-2xl relative px-4 py-3"
+        >
           <AnimateSpin dir="right" />
-          <div className="">
+          <div>
             <Caption className="text-dark lg:text-sm text-xs ">
               <span className="flex items-center justify-center gap-2">
                 <i className="text-dark">
@@ -23,7 +31,14 @@ function CurrenciesProfitBox() {
           <CurrenciesCotnent />
         </div>
 
-        <div className="flex items-center justify-between bg-gray-200 rounded-2xl relative px-4 py-3">
+        <div
+          onClick={() => {
+            document.getElementById("toScroll")?.scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
+          className="flex items-center justify-between cursor-pointer bg-gray-200 rounded-2xl relative px-4 py-3"
+        >
           <AnimateSpin dir="right" />
           <div className="">
             <Caption className="text-dark lg:text-sm text-xs ">
@@ -37,7 +52,14 @@ function CurrenciesProfitBox() {
           </div>
           <CurrenciesCotnent />
         </div>
-        <div className="flex items-center justify-between bg-gray-300 rounded-2xl relative px-4 py-3">
+        <div
+          onClick={() => {
+            document.getElementById("toScroll")?.scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
+          className="flex items-center justify-between cursor-pointer bg-gray-300 rounded-2xl relative px-4 py-3"
+        >
           <AnimateSpin dir="right" />
           <div className="">
             <Caption className="text-dark lg:text-sm text-xs ">

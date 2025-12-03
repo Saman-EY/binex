@@ -94,13 +94,15 @@ function DailyTableLanding() {
                         {amount}%
                       </UpDownBtn>
                     </div>
-                    <div className="mt-1">
+                    <Link href={routes.robotInfo} className="mt-1">
                       <RobotName parentClassName="">
                         <Image className="size-7 ml-1" width={50} height={50} src="/img/robots/PRIME.png" alt="" />
-                        <span className="text-xs text-white">{"پرایم"}</span>
-                        <span className="text-gray400 text-xs ms-1">{"(Prime) "}</span>
+                        <div className=" flex flex-col justify-center min-w-[4rem]">
+                          <span className="text-xs text-white text-center">{"پرایم"}</span>
+                          <span className="text-gray400 text-xs  text-center ">{"(Prime) "}</span>
+                        </div>
                       </RobotName>
-                    </div>
+                    </Link>
                   </div>
                 </Link>
               );
@@ -113,7 +115,7 @@ function DailyTableLanding() {
                 <Link
                   key={idx}
                   href={routes.dedicatedCurrency}
-                  className="flex  items-center sm:!min-w-[340px] mobile:min-w-[85%] justify-between  bg-dark rounded-2xl px-3 mb-2 py-4"
+                  className="flex items-center sm:!min-w-[340px] mobile:min-w-[85%] justify-between  bg-dark rounded-2xl px-3 mb-2 py-4"
                 >
                   <div className="flex items-center gap-2">
                     <CryptocurrencyLogo className="!p-[2px] !h-9 !w-9">
@@ -137,13 +139,15 @@ function DailyTableLanding() {
                         {"-1.05%"}
                       </UpDownBtn>
                     </div>
-                    <div className="mt-1">
+                    <Link href={routes.robotInfo} className="mt-1">
                       <RobotName parentClassName="">
                         <Image className="size-7 ml-1" width={50} height={50} src="/img/robots/NUCLEUS.png" alt="" />
-                        <span className="text-xs text-white">{"نوکلئوس"}</span>
-                        <span className="text-gray400 text-xs ms-1">{"(Nucleus) "}</span>
+                        <div className="flex flex-col justify-center  min-w-[4rem]">
+                          <span className="text-xs text-white text-center">{"نوکلئوس"}</span>
+                          <span className="text-gray400 text-xs text-center">{"(Nucleus) "}</span>
+                        </div>
                       </RobotName>
-                    </div>
+                    </Link>
                   </div>
                 </Link>
               );

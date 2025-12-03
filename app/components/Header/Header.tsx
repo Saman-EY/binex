@@ -49,7 +49,7 @@ function Header() {
               <div className="ms-auto lg:ml-4 lg:mr-0 scale-[0.5] lg:scale-[0.9]">
                 <LogoBinex />
               </div>
-              <div className="ml-auto lg:flex hidden xl:gap-8 gap-6">
+              <div className="ml-auto lg:flex hidden xl:gap-8 gap-4">
                 {navLinks.map((nav) => {
                   return (
                     <Link

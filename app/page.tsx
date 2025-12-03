@@ -22,6 +22,7 @@ export default function Home() {
       <main>
         <Intro />
         <DailyTableLanding />
+        <div className="my-4"></div>
         <WeeklyTableLanding />
         <BuiltArtificialIntelligence />
         <ThirtyDaysProfitLoss />

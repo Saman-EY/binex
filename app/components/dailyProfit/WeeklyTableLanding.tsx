@@ -97,8 +97,10 @@ function WeeklyTableLanding() {
                     <div className="mt-1">
                       <RobotName parentClassName="">
                         <Image className="size-7 ml-1" width={50} height={50} src="/img/robots/PRIME.png" alt="" />
-                        <span className="text-xs text-white">{"پرایم"}</span>
-                        <span className="text-gray400 text-xs ms-1">{"(Prime) "}</span>
+                        <div className=" flex flex-col justify-center min-w-[4rem]">
+                          <span className="text-xs text-white text-center">{"پرایم"}</span>
+                          <span className="text-gray400 text-xs  text-center ">{"(Prime) "}</span>
+                        </div>
                       </RobotName>
                     </div>
                   </div>
@@ -140,8 +142,10 @@ function WeeklyTableLanding() {
                     <div className="mt-1">
                       <RobotName parentClassName="">
                         <Image className="size-7 ml-1" width={50} height={50} src="/img/robots/NUCLEUS.png" alt="" />
-                        <span className="text-xs text-white">{"نوکلئوس"}</span>
-                        <span className="text-gray400 text-xs ms-1">{"(Nucleus) "}</span>
+                        <div className="flex flex-col justify-center  min-w-[4rem]">
+                          <span className="text-xs text-white text-center">{"نوکلئوس"}</span>
+                          <span className="text-gray400 text-xs text-center">{"(Nucleus) "}</span>
+                        </div>
                       </RobotName>
                     </div>
                   </div>

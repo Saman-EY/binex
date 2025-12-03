@@ -1,10 +1,8 @@
 import React from "react";
 
-
 export type TSelect = React.HTMLAttributes<React.ReactHTMLElement<HTMLDivElement>> & {
   label: string;
 };
-
 
 function Select({ label, className }: TSelect) {
   return (

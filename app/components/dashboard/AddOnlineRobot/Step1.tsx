@@ -24,8 +24,8 @@ async function Step1({}: Step1Props) {
           items={formated}
           label="ربات خود را انتخاب کنید"
           rowSubtitle="انتخاب"
-          rowTitle="نماد و نام صرافی"
-          afterSelectLabel={"صرافی"}
+          rowTitle="نام زبات"
+          afterSelectLabel={"ربات"}
         />
       </div>
       <div className=" lg:pt-[28px] pt-4">
@@ -33,8 +33,8 @@ async function Step1({}: Step1Props) {
           items={currencies}
           label="ارز مربوطه را انتخاب کنید"
           rowSubtitle="انتخاب"
-          rowTitle="نماد و نام صرافی"
-          afterSelectLabel={"صرافی"}
+          rowTitle="نماد و نام ارز"
+          afterSelectLabel={"ارز"}
         />
       </div>
       <div className=" lg:pt-[28px] pt-4">

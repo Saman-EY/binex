@@ -20,7 +20,7 @@ type TTableRobotProps = {
 const TableRobot = ({ arrow = false }: TTableRobotProps) => {
   const router = useRouter();
   return (
-    <div className="">
+    <div id="toScroll" className="">
       {/* desktop */}
       <div className="lg:block hidden">
         <table className="table border-spacing-y-2 border-separate">

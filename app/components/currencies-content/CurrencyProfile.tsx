@@ -10,7 +10,7 @@ import { routes } from "@/app/routes";
 function CurrencyProfile() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center gap-4">
+      <div  className="flex flex-col items-center justify-center gap-4">
         <div className="flex justify-center">
           <Image
             className="lg:w-full w-3/4"
@@ -20,8 +20,11 @@ function CurrencyProfile() {
             height={180}
           />
         </div>
-        <div>
-            قیمت: 4346 USDT
+        <div className="flex items-center gap-1">
+          <span className="text-gray800 text-base">قیمت:</span>
+          <span className="flex items-center gap-1 text-lg">
+            <span className="text-xs">USDT</span> 4346
+          </span>
         </div>
         <div className="flex items-center justify-center">
           <Caption className="text-gray800 text-base">{"نام و اطلاعات ارز :"}</Caption>

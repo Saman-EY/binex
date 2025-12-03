@@ -18,15 +18,9 @@ function BinxRobots() {
         </span>
         <div className="flex flex-col gap-y-6 lg:gap-32">
           {/* Helinsky robot1 */}
-          <div className="bg-white flex flex-col lg:relative rounded-2xl lg:shadow-binex py-6 lg:px-12 px-4  gap-6">
-            <Link href={"/robot-info/neo"} className="lg:absolute inset-0 -right-12 z-50 max-w-max mx-auto lg:mx-0">
-              <Image
-                className="sm:scale-100 scale-[80%]"
-                src="/img/robots/NEURON.png"
-                alt="kucoin logo"
-                width={250}
-                height={212}
-              />
+          <div className="bg-white flex flex-col lg:relative rounded-2xl lg:shadow-binex py-6 lg:px-12 px-4 gap-1">
+            <Link href={"/robot-info/neo"} className="lg:absolute inset-0 -right-12 z-50 max-w-max mx-auto lg:mx-0 ">
+              <Image className=" " src="/img/robots/NEURON.png" alt="kucoin logo" width={250} height={212} />
             </Link>
             <div className="bg-blue-light backdrop-blur-[-1px] blur-[55px] absolute z-40 rounded-full lg:flex hidden  top-0 -right-5 lg:h-32 lg:w-32 "></div>
             <div className="bg-pink backdrop-blur-[-1px] blur-[55px] absolute z-40 rounded-full lg:flex hidden  top-20 right-8 h-40 w-40"></div>
@@ -86,7 +80,7 @@ function BinxRobots() {
           </div>
 
           {/* robot2 */}
-          <div className="bg-white flex flex-col-reverse lg:flex-col gap-6 lg:relative rounded-2xl lg:shadow-binex py-6 lg:px-12 px-4 ">
+          <div className="bg-white flex flex-col-reverse lg:flex-col gap-1 lg:relative rounded-2xl lg:shadow-binex py-6 lg:px-12 px-4 ">
             <div className="grid grid-cols-3">
               <div className="lg:col-span-2 col-span-3">
                 <div className="grid grid-cols-12 items-end gap-4">
@@ -141,7 +135,7 @@ function BinxRobots() {
             </div>
             <Link href={"/robot-info/neo"} className="lg:absolute -top-12 -left-9 z-50 max-w-max mx-auto lg:mx-0">
               <Image
-                className="sm:scale-100 scale-[80%]"
+                className=""
                 src="/img/robots/QUANTUM.png"
                 alt="kucoin logo"
                 width={250}
@@ -154,10 +148,10 @@ function BinxRobots() {
           </div>
 
           {/* robot3 */}
-          <div className="bg-white flex flex-col lg:relative rounded-2xl lg:shadow-binex py-6 lg:px-12 px-4 gap-6">
+          <div className="bg-white flex flex-col lg:relative rounded-2xl lg:shadow-binex py-6 lg:px-12 px-4 gap-1">
             <Link href={"/robot-info/neo"} className="lg:absolute  -right-12 z-50 max-w-max top-5 mx-auto lg:mx-0">
               <Image
-                className="sm:scale-100 scale-[80%]"
+                className=""
                 src="/img/robots/STARLET.png"
                 alt="kucoin logo"
                 width={250}

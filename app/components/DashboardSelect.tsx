@@ -42,7 +42,6 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
     }
   }, [searchValue]);
 
-
   return (
     <div className="flex flex-col items-start gap-2">
       <div className={cn("w-full", className)}>
@@ -84,6 +83,32 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
                   </div>
                 )) || <Input.Placeholder>{placeholder}</Input.Placeholder>}
               </InputBase> */}
+              <div className="flex flex-col absolute left-3 bottom-1/2 translate-y-1/2">
+                <span className="text-black">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="3"
+                    stroke="currentColor"
+                    className="size-2"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                  </svg>
+                </span>
+                <span className="text-black">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="3"
+                    stroke="currentColor"
+                    className="size-2 rotate-180"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                  </svg>
+                </span>
+              </div>
             </div>
           </Combobox.Target>
 

@@ -43,13 +43,13 @@ function DailyProfit() {
               </UpDownBtn>
             </div>
           </div>
-          <div className="mt-2.5">
+          <Link href={routes.robotInfo} className="mt-2.5">
             <RobotName parentClassName="">
               <Image className="ml-2" src="/img/robots/NEO.png" alt="Cryptocurrency" width={24} height={24} />
               <span className="text-xs text-white font-extralight">{"نوا"}</span>
               <span className="text-gray400 text-xxs ms-1">{"(Nova) "}</span>
             </RobotName>
-          </div>
+          </Link>
         </div>
       </Link>
     </div>
