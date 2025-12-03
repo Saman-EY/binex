@@ -16,7 +16,7 @@ export const routes = {
   guide: "/guide",
   faq: "/faq",
   robots: "/robots",
-  robotInfo: "/robot-info",
+  robotInfo: "/robot-info/neo",
   ai: "/ai",
   dashboard: {
     myProfitLoss: {

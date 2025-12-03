@@ -36,15 +36,12 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
   useEffect(() => {
     if (!searchValue) {
       setResult(options);
-      console.log("**1");
     } else {
-      console.log("**2");
       const temp = options.filter((item) => item.title.toLowerCase().includes(searchValue.toLowerCase()));
       setResult(temp);
     }
   }, [searchValue]);
 
-  // console.log("**", options, result);
 
   return (
     <div className="flex flex-col items-start gap-2">

@@ -8,11 +8,10 @@ import DashboardSelect from "@/app/components/DashboardSelect";
 
 function SelectFilterCurrency() {
   return (
-    <>
       <div className="flex items-center justify-between gap-4 lg:flex-row flex-col">
         <div className="flex items-center gap-4 lg:flex-row flex-col grow w-full">
-          <div className="grid grid-cols-2 lg:grid-cols-5 items-center gap-4 w-full">
-            <div className="col-span-1">
+          <div className="grid grid-cols-2 lg:grid-cols-8 items-center gap-4 w-full">
+            <div className="col-span-2">
               <DashboardSelect
                 placeholder="ربات:"
                 options={[
@@ -24,13 +23,13 @@ function SelectFilterCurrency() {
                 ]}
               />
             </div>
-            <div className="col-span-2 lg:col-span-1">
+            <div className="col-span-2 lg:col-span-2">
               <Select className="text-gray800 lg:text-sm  text-xs text-nowrap" label="تاریخ شروع:" />
             </div>
-            <div className="col-span-2 lg:col-span-1">
+            <div className="col-span-2 lg:col-span-2">
               <Select className="text-gray800 lg:text-sm  text-xs text-nowrap" label="تاریخ پایان:" />
             </div>
-            <div className="col-span-2 lg:col-span-1">
+            <div className="col-span-2 lg:col-span-2">
               <ButtonFilter>
                 <div className="flex items-center justify-center gap-2">
                   <i className="text-dark group-hover:text-white">
@@ -43,7 +42,6 @@ function SelectFilterCurrency() {
           </div>
         </div>
       </div>
-    </>
   );
 }
 

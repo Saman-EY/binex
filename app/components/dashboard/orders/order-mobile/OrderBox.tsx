@@ -17,10 +17,11 @@ import { p2e } from "../DashboardOrderTable";
 
 function OrderBox({ order }: { order: Order }) {
   const [open, setOpen] = useState(false);
+
   return (
     <div
       className={cn(
-        "border border-gray400 bg-white rounded-2xl px-2 py-4 w-full relative transition-[max-height] overflow-hidden max-h-[8.2rem]",
+        "border border-gray400 bg-white rounded-2xl py-2 px-2 w-full relative transition-[max-height] overflow-hidden max-h-[7.3rem]",
         open && "max-h-[1000px] border-dark800 shadow-lg"
       )}
     >
@@ -29,21 +30,21 @@ function OrderBox({ order }: { order: Order }) {
           <ChevronDownIcon />
         </i>
       </div>
-      <div className="flex flex-col px-3 pb-0.5 pt-0">
-        <div className="flex w-full justify-between items-center  border-b border-line pb-2">
+      <div className="flex flex-col ">
+        <div className="flex w-full justify-between items-start  border-b border-line pb-2">
           <Link href={routes.dashboard.binanceMarket2} className="flex items-center gap-2">
             <CryptocurrencyLogo className="!p-[2px] !h-11 !w-11">
               <Image src={order.currency.logo} alt="Cryptocurrency logo" width={45} height={45} />
             </CryptocurrencyLogo>
             <NameCryptocurrency parentClassName="flex-col items-end">
-              <span className="text-[18px] text-dark-black font-semibold">{order.currency.name_fa}</span>
-              <span className="text-gray800 text-xs  mt-1">{order.currency.name}</span>
+              <span className="text-[18px] text-dark-black font-semibold">{order.currency.name}</span>
+              {/* <span className="text-gray800 text-xs  mt-1">{order.currency.name}</span> */}
             </NameCryptocurrency>
           </Link>
           <div className="flex flex-col gap-2 items-end justify-end">
             <div className="flex items-center gap-1 ">
               <TimeFrame className="text-sm font-semibold text-dark ">{order.timeframe}</TimeFrame>
-              <UpDownBtn className="text-nowrap !text-xxs px-8 !py-2 !bg-up">{"موفق"}</UpDownBtn>
+              <span className="text-nowrap !text-xxs !bg-up text-white px-4 py-2 rounded-xl">موفق</span>
             </div>
             <div className="">
               <RobotName parentClassName="flex ">
@@ -56,7 +57,7 @@ function OrderBox({ order }: { order: Order }) {
         </div>
         <div className="w-full pt-2 ">
           <ProfitLossContent
-            parentclassName="flex-row items-center justify-between gap-2 py-1 w-full"
+            parentclassName="flex-row items-center justify-between gap-2 px-3 w-full"
             title="ساعت و تاریخ معامله "
           >
             <TextInfo parentClassName="flex-row items-center justify-center">
@@ -67,7 +68,7 @@ function OrderBox({ order }: { order: Order }) {
         </div>
       </div>
 
-      <div className="flex items-center justify-between flex-col w-full p-3 pt-22">
+      <div className="flex items-center justify-between flex-col w-full px-3">
         <div className="w-full ">
           <ProfitLossContent
             parentclassName="flex-row items-center justify-between gap-2 w-full py-1"
@@ -81,7 +82,7 @@ function OrderBox({ order }: { order: Order }) {
         </div>
       </div>
 
-      <div className="flex items-center justify-between flex-col w-full p-3 pt-22">
+      <div className="flex items-center justify-between flex-col w-full px-3">
         <div className="w-full ">
           <ProfitLossContent
             parentclassName="flex-row items-center justify-between gap-2 w-full py-1"
@@ -96,7 +97,7 @@ function OrderBox({ order }: { order: Order }) {
           </ProfitLossContent>
         </div>
       </div>
-      <div className="flex items-center justify-between flex-col w-full p-3 pt-0">
+      <div className="flex items-center justify-between flex-col w-full px-3">
         <div className="w-full ">
           <ProfitLossContent parentclassName="flex-row items-center justify-between gap-2 w-full py-1" title="پوزیشن">
             <TextInfo parentClassName="flex-row items-center justify-center gap-[2px]">

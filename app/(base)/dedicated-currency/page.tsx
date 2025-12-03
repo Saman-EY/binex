@@ -20,7 +20,6 @@ function Page() {
               width={58}
               height={78}
             />
-
             <div className="flex flex-col lg:items-start lg:justify-start items-center justify-center gap-2 w-full">
               <Caption className="text-black font-bold lg:text-2xl text-xl">{"صفحه اختصاصی (بیتکوین) BTC  "}</Caption>
             </div>
@@ -37,7 +36,6 @@ function Page() {
           </div>
           <SelectFilterCurrency />
           <div className="flex flex-col">
-            <TotalProfitLoss />
             <TableThree />
           </div>
         </div>

@@ -10,8 +10,6 @@ type Step1Props = {};
 async function Step1({}: Step1Props) {
   const robots = await getRobots();
 
-  console.log("robots", robots);
-
   const formated = robots.map((item) => ({
     id: item.id,
     name: item.name,
