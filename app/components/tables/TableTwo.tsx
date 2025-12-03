@@ -20,7 +20,7 @@ const TableTwo = (props: TTableTwoProps) => {
       <div className="lg:block hidden">
         <table className="table border-spacing-y-2 border-separate">
           {/* head */}
-          <thead>
+          <thead className="relative">
             <tr className="text-center border-b-0">
               <th className="text-gray900 text-xs font-semibold bg-head-table-color py-4 rounded-r-xl">
                 نام و نماد ارز
@@ -74,6 +74,10 @@ const TableTwo = (props: TTableTwoProps) => {
                 </CaptionThTable>
               </th>
             </tr>
+            <span className="absolute flex size-3 top-1 left-1">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+            </span>
           </thead>
           <tbody className="text-center ">
             {Array.from({ length: 10 }).map((item, idx) => {

@@ -56,7 +56,7 @@ function Header() {
                       key={nav.link}
                       href={nav.link}
                       className={cn(
-                        "relative text-dark-black text-xs xl:text-sm hover:text-blue transition-all hover:after:opacity-100 font-semibold text-nowrap",
+                        "relative text-dark-black whitespace-nowrap text-xs xl:text-sm hover:text-blue transition-all hover:after:opacity-100 font-semibold text-nowrap",
                         'after:absolute after:-bottom-[115%] after:inset-x-0 after:h-[2px] after:bg-blue after:content-[""] after:opacity-0 after:transition-all',
                         path.indexOf(nav.link) > -1 && "text-blue after:opacity-100"
                       )}

@@ -26,7 +26,9 @@ async function Page() {
                 </div>
                 <div className="bg-white rounded-2xl px-4 lg:py-8 py-4 gap-4 shadow-binex flex flex-col border border-transparent  hover:border-blue-light transition-all">
                   <ProfileRobot name={item.name} name_fa={item.name_fa} image={item.image} />
-                  <RobotProfitBoxTwo />
+                  <Link href={"/robot-info/neo"}>
+                    <RobotProfitBoxTwo />
+                  </Link>
                   <div className="flex flex-col gap-2 ">
                     <Link href={routes.dashboard.robots.addRobotOnline}>
                       <ButtonPrimary className="!py-4 ">

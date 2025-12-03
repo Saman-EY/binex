@@ -10,23 +10,19 @@ function Step2({}: Props) {
   return (
     <>
       <div className="grid grid-cols-3 gap-8 items-start">
-        <div className="order-1 lg:col-span-1 col-span-3 h-full pt-[28px]">
+        {/* <div className="order-1 lg:col-span-1 col-span-3 h-full pt-[28px]">
           <SelectBox
             items={currencies}
             label="ارز مورد نظر خود را انتخاب کنید"
             rowTitle="نماد و نام ارز"
             rowSubtitle="انتخاب"
             defaultOpen={false}
-            afterSelectLabel={'ارز'}
+            afterSelectLabel={"ارز"}
           />
-        </div>
+        </div> */}
         <div className="order-3 lg:order-2 lg:col-span-1 col-span-3 h-full ">
           <div className="flex flex-col items-start ">
-            <InputBox
-              label="مبلغ شروع معامله"
-              placeholder="300,000"
-              text=""
-            />
+            <InputBox label="مبلغ شروع معامله" placeholder="300,000" text="" />
             <div className="flex items-center justify-between gap-8 ">
               <div className="flex items-center gap-2">
                 <span className="text-sm text-gray900">{"تومان"}</span>
@@ -51,16 +47,6 @@ function Step2({}: Props) {
             </span>
           </InputBox>
         </div>
-        <div className="order-2 lg:order-4 lg:col-span-1 col-span-3 h-full pt-[28px]">
-          <SelectBox
-            items={times}
-            label="تایم فریم"
-            rowTitle="تایم فریم:"
-            rowSubtitle="انتخاب"
-            defaultOpen={false}
-            afterSelectLabel={'تایم فریم'}
-          />
-        </div>
         <div className="order-4 lg:order-5 lg:col-span-1 col-span-3 h-full pt-[28px]">
           <SelectBox
             items={leverages}
@@ -68,7 +54,7 @@ function Step2({}: Props) {
             rowTitle="انتخاب لوریج یا ضریب معامله"
             rowSubtitle="انتخاب"
             defaultOpen={false}
-            afterSelectLabel={'لوریج'}
+            afterSelectLabel={"لوریج"}
           />
         </div>
         <div className="order-6 lg:col-span-1 col-span-3 h-full">

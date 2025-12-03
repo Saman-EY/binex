@@ -9,6 +9,7 @@ import RobotName from "../../global/RobotName";
 import Link from "next/link";
 import { routes } from "@/app/routes";
 import { useRouter } from "next/navigation";
+import AnimateSpin from "@/app/ui/AnimateSpin";
 function TableDTwo() {
   const r = useRouter();
   const handleRowClick = () => {
@@ -38,7 +39,8 @@ function TableDTwo() {
           <tbody>
             {/* row 1 */}
             <tr className="border-b-0" onClick={handleRowClick}>
-              <td className=" text-center bg-white100 rounded-r-2xl ">
+              <td className="relative text-center bg-white100 rounded-r-2xl ">
+                <AnimateSpin dir="right" />
                 <Link href={routes.dashboard.binanceMarket2} className="flex gap-1 items-center justify-center">
                   <CryptocurrencyLogo>
                     <div className="">
@@ -58,7 +60,7 @@ function TableDTwo() {
                 </Link>
               </td>
 
-              <td className="text-center bg-white100">
+              <td className="text-center bg-white100 ">
                 <div className="flex flex-row items-center gap-1 justify-center">
                   <Image className="" src="/img/robots/ALGORITHM.png" alt="binex Logo" width={40} height={40} />
                   <span className="text-xs text-gray900">{"الگوریتم"}</span>
@@ -76,7 +78,8 @@ function TableDTwo() {
             </tr>
             {/* row 2 */}
             <tr className="border-b-0" onClick={handleRowClick}>
-              <td className=" text-center bg-white100 rounded-r-2xl ">
+              <td className="relative text-center bg-white100 rounded-r-2xl ">
+                <AnimateSpin dir="right" />
                 <Link href={routes.dashboard.binanceMarket2} className="flex gap-1 items-center justify-center">
                   <CryptocurrencyLogo>
                     <div className="">

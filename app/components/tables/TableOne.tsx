@@ -9,6 +9,7 @@ import NameCryptocurrency from "../global/NameCryptocurrency";
 import UpDownBtn from "../global/UpDownBtn";
 import Image from "next/image";
 import { routes } from "@/app/routes";
+import { useRouter } from "next/navigation";
 
 type TTableOneProps = {
   arrow?: boolean;
@@ -16,6 +17,8 @@ type TTableOneProps = {
 };
 
 const TableOne = ({ arrow, forceSign }: TTableOneProps) => {
+  const router = useRouter();
+
   return (
     <div className="my-4">
       {/* desktop */}
@@ -40,8 +43,9 @@ const TableOne = ({ arrow, forceSign }: TTableOneProps) => {
               }
               return (
                 <tr
+                  onClick={() => router.push(routes.dedicatedCurrency)}
                   key={idx}
-                  className="bg-transparent shadow-binex rounded-xl border-b-0 text-center hover:shadow-binex-xl hover:transition-all"
+                  className="bg-transparent cursor-pointer shadow-binex rounded-xl border-b-0 text-center hover:shadow-binex-xl hover:transition-all"
                 >
                   <td className="flex justify-center">
                     <CryptocurrencyLogo>
@@ -70,7 +74,7 @@ const TableOne = ({ arrow, forceSign }: TTableOneProps) => {
                       {amount}%
                     </UpDownBtn>
                   </td>
-                  <td>
+                  <td onClick={(e) => e.stopPropagation()}>
                     <Link href={"/robot-info/neo"}>
                       <RobotName parentClassName="">
                         <Image className="size-7 ml-2" width={50} height={50} src="/img/robots/PRIME.png" alt="" />
@@ -100,10 +104,10 @@ const TableOne = ({ arrow, forceSign }: TTableOneProps) => {
           }
           return (
             <div
+              onClick={() => router.push(routes.dedicatedCurrency)}
               key={idx}
-              className="flex items-center justify-between shadow-2xl bg-white rounded-xl px-3 mb-2 py-2 relative"
+              className="flex cursor-pointer items-center justify-between shadow-2xl bg-white rounded-xl px-3 mb-2 py-2 relative"
             >
-              <Link href={routes.dedicatedCurrency} className={"absolute z-1 inset-0"} />
               <div className="flex items-center gap-2">
                 <CryptocurrencyLogo>
                   <Image
@@ -127,12 +131,12 @@ const TableOne = ({ arrow, forceSign }: TTableOneProps) => {
                     {amount}%
                   </UpDownBtn>
                 </div>
-                <div className="mt-1">
-                  <RobotName parentClassName="">
+                <div onClick={(e) => e.stopPropagation()} className="mt-1">
+                  <Link className="flex items-center justify-center" href={"/robot-info/neo"}>
                     <Image className="size-7 ml-2" width={50} height={50} src="/img/robots/ASTRA.png" alt="" />
                     <span className="text-xs text-gray900">{"آسترا"}</span>
                     <span className="text-blue-light-2 text-xxs ms-1">{"(Astra) "}</span>
-                  </RobotName>
+                  </Link>
                 </div>
               </div>
             </div>

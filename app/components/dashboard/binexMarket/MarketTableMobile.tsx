@@ -10,6 +10,7 @@ import CryptocurrencyLogo from "../../global/CryptocurrencyLogo";
 import Link from "next/link";
 import { routes } from "@/app/routes";
 import { useRouter } from "next/navigation";
+import AnimateSpin from "@/app/ui/AnimateSpin";
 
 function MarketTableMobile() {
   const r = useRouter();
@@ -40,7 +41,8 @@ function MarketTableMobile() {
               const amount = +String(Math.random() * 10).slice(0, 4) * (Math.random() > 0.5 ? -1 : 1);
 
               return (
-                <tr key={idx} className="   border-b-0 text-center" onClick={handleRowClick}>
+                <tr key={idx} className="border-b-0 text-center relative" onClick={handleRowClick}>
+                  <AnimateSpin dir="right" />
                   <td className="flex justify-center items-center gap-2 px-1 bg-white rounded-r-2xl">
                     <Link href={routes.dashboard.binanceMarket2} className="flex items-center">
                       <CryptocurrencyLogo>

@@ -24,20 +24,13 @@ function StepperAddOnlineRobot() {
       <div className="bg-white rounded-2xl lg:p-8 p-4">
         <TabGroup selectedIndex={currentStep - 1}>
           <TabList
-            className={
-              "flex md:flex-row flex-col items-start  justify-between lg:items-center sm:gap-4 lg:gap-1 "
-            }
+            className={"flex md:flex-row flex-col items-start  justify-between lg:items-center sm:gap-4 lg:gap-1 "}
           >
             {steps.map((step, idx) => {
               const isActive: boolean = +currentStep > idx;
               return (
                 <React.Fragment key={idx}>
-                  <Tab
-                    key={idx}
-                    as={Link}
-                    href={`?step=${idx + 1}`}
-                    className={"flex text-xs outline-0"}
-                  >
+                  <Tab key={idx} as={Link} href={`?step=${idx + 1}`} className={"flex text-xs outline-0"}>
                     <span
                       className={cn(
                         "rounded-full w-5 h-5 grid place-items-center bg-gray-300 ml-1 text-white",
@@ -46,11 +39,7 @@ function StepperAddOnlineRobot() {
                     >
                       {idx + 1}
                     </span>
-                    <span
-                      className={cn("text-gray-300", isActive && "text-dark")}
-                    >
-                      {step}
-                    </span>
+                    <span className={cn("text-gray-300", isActive && "text-dark")}>{step}</span>
                   </Tab>
                   {idx < steps.length - 1 && (
                     <hr
@@ -79,45 +68,23 @@ function StepperAddOnlineRobot() {
           </TabPanels>
         </TabGroup>
         <div className={cn("flex justify-between mt-16")}>
-          <Link
-            href={`?step=${currentStep - 1}`}
-            aria-disabled={currentStep < 2}
-          >
-            <ButtonBinex
-              className={cn(
-                currentStep < 2
-                  ? "pointer-events-none opacity-0"
-                  : "bg-slate-400"
-              )}
-            >
+          <Link href={`?step=${currentStep - 1}`} aria-disabled={currentStep < 2}>
+            <ButtonBinex className={cn(currentStep < 2 ? "pointer-events-none opacity-0" : "bg-slate-400")}>
               {"مرحله قبل"}
             </ButtonBinex>
           </Link>
-          <Link
-            href={`?step=${currentStep + 1}`}
-            className={cn(currentStep >= 3 && "hidden")}
-          >
-            <ButtonBinex
-              className={cn(
-                currentStep >= 3 && "bg-gray-300 pointer-events-none"
-              )}
-            >
+          <Link href={`?step=${currentStep + 1}`} className={cn(currentStep >= 3 && "hidden")}>
+            <ButtonBinex className={cn(currentStep >= 3 && "bg-gray-300 pointer-events-none")}>
               {"مرحله بعد"}
             </ButtonBinex>
           </Link>
           {currentStep > 2 && (
             <Modal
               className={cn("rounded-2xl px-4 py-10 w-full")}
-              button={
-                <ButtonBinex className="bg-green100">
-                  {"راه‌اندازی آنلاین"}
-                </ButtonBinex>
-              }
+              button={<ButtonBinex className="bg-green100">{"راه‌اندازی آنلاین"}</ButtonBinex>}
             >
               <div className="flex items-center justify-center flex-col gap-4">
-                <span className="lg:text-xl text-sm text-black">
-                  ربات ROCKET با موفقیت فعال شد.
-                </span>
+                <span className="lg:text-xl text-sm text-black">ربات ROCKET با موفقیت فعال شد.</span>
                 <div className="lg:w-1/2 w-full">
                   <i className="scale-[2] text-success flex mx-auto justify-center mt-3">
                     <TickSquareIcon />
@@ -134,8 +101,4 @@ function StepperAddOnlineRobot() {
 
 export default StepperAddOnlineRobot;
 
-const steps = [
-  "مشخص کردن صرافی و کلید API",
-  "مشخص کردن جزییات معامله",
-  "فعال‌سازی ربات",
-];
+const steps = ["مشخص کردن صرافی و کلید API", "مشخص کردن جزییات معامله", "فعال‌سازی ربات"];

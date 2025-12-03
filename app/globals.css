@@ -17,6 +17,17 @@ section {
     --dark: #00334d;
     --dark900: #2a5281;
     --dark800: 18 83 115;
+
+    @keyframes ping {
+      75%,
+      100% {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
+    .animate-ping {
+      animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
     --dark100: #33838b;
     --gray900: #505050;
     --gray800: #9b9b9b;
@@ -190,3 +201,4 @@ section {
 textarea::-webkit-scrollbar {
   width: 12px;
 }
+

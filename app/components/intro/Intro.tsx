@@ -10,7 +10,6 @@ function Intro() {
     <div className="container mx-auto">
       <div className="lg:flex-row flex flex-col-reverse items-center justify-between mt-8 lg:mx-8 mx-4 mb-20 gap-y-8">
         <div className="~lg:w-full">
-          
           <div className="flex items-center">
             <div className="">
               <Image
@@ -43,7 +42,7 @@ function Intro() {
         </div>
 
         <div className="flex items-end">
-          <Image className="object-cover" src="/img/landing.png" alt="binex Logo" width={400} height={340} />
+          <Image className="object-cover" src="/img/robots/CRYPTO.png" alt="binex Logo" width={400} height={340} />
         </div>
       </div>
     </div>

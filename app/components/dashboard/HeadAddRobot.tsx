@@ -5,9 +5,7 @@ function HeadAddRobot() {
   return (
     <>
       <div className="flex lg:flex-row flex-col items-center justify-between gap-4">
-          <Caption>
-            {"راه اندازی آنلاین"}
-          </Caption>
+        <Caption>{"راه اندازی آنلاین"}</Caption>
       </div>
     </>
   );

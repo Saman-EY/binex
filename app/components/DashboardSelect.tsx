@@ -65,7 +65,7 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
                 type="text"
                 onFocus={() => combobox.openDropdown()}
                 className="bg-transparent border rounded-lg absolute z-10 bottom-1/2 translate-y-1/2 right-2 w-[90%] outline-none"
-                placeholder="رمز ارز"
+                placeholder={placeholder}
               />
               {/* <InputBase
                 value={value}
