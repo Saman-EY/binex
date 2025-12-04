@@ -93,8 +93,11 @@ const Filters = () => {
             <DashboardSelect
               placeholder=""
               options={[
-                { title: "BTC", icon: "/img/cryptocurrency/3.svg" },
-                { title: "ETH", icon: "/img/cryptocurrency/ETH.svg" },
+                { title: "Neuron", icon: "/img/robots/NEURON.png" },
+                { title: "Quantom", icon: "/img/robots/QUANTUM.png" },
+                { title: "Algorithm", icon: "/img/robots/ALGORITHM.png" },
+                { title: "Starlet", icon: "/img/robots/STARLET.png" },
+                { title: "Infinit", icon: "/img/robots/INFINIT.png" },
               ]}
             />
           </div>
