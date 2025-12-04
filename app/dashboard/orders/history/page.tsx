@@ -62,7 +62,7 @@ export default OrdersHistory;
 const Filters = () => {
   return (
     <div className="flex items-center justify-between lg:flex-row flex-col gap-5">
-      <div className="grid grid-cols-1 lg:grid-cols-5 items-center lg:flex-row flex-col gap-3 w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-5 2xl:grid-cols-7 items-center lg:flex-row flex-col gap-3 w-full">
         <div className="col-span-1 flex items-center gap-1">
           <label className="shrink-0 text-gray800 min-w-[4.3rem] lg:min-w-min text-end text-sm" htmlFor="">
             رمزارز :
@@ -108,17 +108,17 @@ const Filters = () => {
         <div className="col-span-1">
           <Select className="text-gray800 text-sm text-nowrap " label="تاریخ پایان:"></Select>
         </div>
-        <div className="col-span-1 flex items-center gap-1">
-          <label className="shrink-0 text-gray800 min-w-[2.3rem]  text-end text-sm" htmlFor="">
+        <div className="col-span-1 flex items-center justify-end gap-1">
+          <label className="shrink-0 text-gray800 min-w-[4.3rem] lg:min-w-[2.3rem]  text-end text-sm" htmlFor="">
             نوع :
           </label>
-          <div className="w-full max-w-[13rem]">
+          <div className="w-full xl:max-w-[13rem]">
             <DashboardSelect placeholder="" options={types} />
           </div>
         </div>
         <div className="col-span-1  ">
           <ButtonFilter>
-            <div className="  flex items-center justify-center gap-2">
+            <div className=" flex items-center justify-center gap-2">
               <i className="text-dark group-hover:text-white">
                 <HierarchyIcon />
               </i>

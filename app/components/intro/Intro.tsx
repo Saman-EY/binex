@@ -8,7 +8,7 @@ import { routes } from "@/app/routes";
 function Intro() {
   return (
     <div className="container mx-auto">
-      <div className="lg:flex-row flex flex-col-reverse items-center justify-between mt-3 lg:mx-8 mx-4 mb-5 gap-y-2">
+      <div className="lg:flex-row flex flex-col-reverse items-center justify-between mt-1 md:mt-3 lg:mx-8 mx-4 mb-5 gap-y-1">
         <div className="~lg:w-full">
           <div className="flex items-center">
             <div className="">
@@ -30,7 +30,7 @@ function Intro() {
               </span>
             </div>
           </div>
-          <div className="flex items-center w-full gap-2 lg:mt-6 mt-4">
+          <div className="flex items-center w-full gap-2 lg:mt-6 mt-2">
             <Link href={routes.auth.loginFree} className="basis-1/2 grow">
               <ButtonPrimary className="px-0 bg-yellow text-dark font-extrabold leading-4">نسخه دمو</ButtonPrimary>
             </Link>

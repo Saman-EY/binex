@@ -84,7 +84,12 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
               />
               {!isFocused
                 ? value && (
-                    <div className="flex items-center gap-2 z-50">
+                    <div
+                      onClick={() => {
+                        inputRef.current?.focus();
+                      }}
+                      className="flex items-center gap-2 z-50"
+                    >
                       {getImage(value)} {value}
                     </div>
                   )
@@ -109,7 +114,12 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
                   </div>
                 )) || <Input.Placeholder>{placeholder}</Input.Placeholder>}
               </InputBase> */}
-              <div className="flex flex-col absolute left-3 bottom-1/2 translate-y-1/2">
+              <div
+                onClick={() => {
+                  inputRef.current?.focus();
+                }}
+                className="flex flex-col absolute left-3 bottom-1/2 translate-y-1/2"
+              >
                 <span className="text-black">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
