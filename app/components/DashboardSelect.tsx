@@ -80,17 +80,15 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
                   setSearchValue("");
                 }}
                 className="bg-transparent rounded-lg absolute z-10 bottom-1/2 translate-y-1/2 right-2 w-[90%] outline-none"
-                placeholder={placeholder}
+                placeholder={!value ? placeholder : ""}
               />
-              {!isFocused ? (
-                value ? (
-                  <div className="flex items-center gap-2 z-50">
-                    {getImage(value)} {value}
-                  </div>
-                ) : (
-                  <Input.Placeholder>{placeholder}</Input.Placeholder>
-                )
-              ) : null}
+              {!isFocused
+                ? value && (
+                    <div className="flex items-center gap-2 z-50">
+                      {getImage(value)} {value}
+                    </div>
+                  )
+                : null}
               {/* <InputBase
                 value={value}
                 component="button"

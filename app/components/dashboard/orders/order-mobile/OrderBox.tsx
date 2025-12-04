@@ -46,13 +46,13 @@ function OrderBox({ order }: { order: Order }) {
               <TimeFrame className="text-sm font-semibold text-dark ">{order.timeframe}</TimeFrame>
               <span className="text-nowrap !text-xxs !bg-up text-white px-4 py-2 rounded-xl">موفق</span>
             </div>
-            <div className="">
+            <Link href={routes.robotInfo} className="">
               <RobotName parentClassName="flex ">
                 <Image className="size-7 ml-1" width={50} height={50} src={order.robot.image} alt="" />
                 <span className="text-xs text-dark-black font-semibold">{order.robot.name_fa}</span>
                 <span className="text-gray800 text-xxs ms-1">({order.robot.name})</span>
               </RobotName>
-            </div>
+            </Link>
           </div>
         </div>
         <div className="w-full pt-2 ">

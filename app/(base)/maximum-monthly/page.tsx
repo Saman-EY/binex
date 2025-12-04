@@ -18,19 +18,14 @@ function Page() {
   return (
     <>
       <div className="container mx-auto">
-        {/* <div className="flex  flex-col gap-4 lg:mt-8 mt-4 lg:mx-4">
-          <div className="flex lg:flex-row flex-col lg:justify-between items-center gap-4">
-            <Caption className="text-black font-bold lg:text-2xl text-base">
-              {"بیشترین سود و زیان 30 روز اخیر  "}
-            </Caption>
-
-            <div className="lg:w-1/5 w-full ">
-              <ProfitLossFilter isFirst={isShiftingToFirst} setIsFirst={changeTab}></ProfitLossFilter>
-            </div>
+        <div className="flex lg:flex-row flex-col lg:justify-between items-center justify-center lg:my-8 my-4">
+          <Caption className="text-black font-bold lg:text-xl text-base mb-4 lg:mb-0">
+            {"بیشترین سود و زیان ماهانه"}
+          </Caption>
+          <div className="lg:w-1/5 w-full">
+            <ProfitLossFilter isFirst={isShiftingToFirst} setIsFirst={changeTab} />
           </div>
-
-          <FilterTable />
-        </div> */}
+        </div>
         <div
           className={clsx(
             "lg:mx-4 mx-0 transition hidden",

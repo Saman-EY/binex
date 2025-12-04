@@ -6,7 +6,7 @@ import ButtonPrimary from "../global/button/ButtonPrimary";
 import Link from "next/link";
 import { routes } from "@/app/routes";
 
-function FAQBinex({ showExtraButton }: { showExtraButton?: boolean }) {
+function FAQBinex({ showExtraButton, limit }: { showExtraButton?: boolean; limit?: number }) {
   return (
     <div className="container mx-auto lg:px-32 px-4 mt-5">
       <div className="">
@@ -19,7 +19,7 @@ function FAQBinex({ showExtraButton }: { showExtraButton?: boolean }) {
           <Caption className="text-dark font-bold lg:text-2xl text-base mb-4" parentClassName={"mobile:justify-center"}>
             {"سوالات متداول پیش از استفاده از باینکس"}
           </Caption>
-          <Demo />
+          <Demo limit={limit} />
           {showExtraButton && (
             <Link href={routes.faq}>
               <ButtonPrimary className="mt-6">مشاهده تمام سوالات متداول</ButtonPrimary>

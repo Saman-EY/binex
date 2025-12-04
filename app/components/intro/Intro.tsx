@@ -8,7 +8,7 @@ import { routes } from "@/app/routes";
 function Intro() {
   return (
     <div className="container mx-auto">
-      <div className="lg:flex-row flex flex-col-reverse items-center justify-between mt-8 lg:mx-8 mx-4 mb-5 gap-y-2">
+      <div className="lg:flex-row flex flex-col-reverse items-center justify-between mt-3 lg:mx-8 mx-4 mb-5 gap-y-2">
         <div className="~lg:w-full">
           <div className="flex items-center">
             <div className="">

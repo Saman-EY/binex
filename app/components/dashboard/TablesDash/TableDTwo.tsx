@@ -61,7 +61,7 @@ function TableDTwo() {
               </td>
 
               <td className="text-center bg-white100 ">
-                <div className="flex flex-row items-center gap-1 justify-center">
+                <div className="flex flex-row items-center w-fit mx-auto gap-1 min-w-[9.6rem] !justify-start">
                   <Image className="" src="/img/robots/ALGORITHM.png" alt="binex Logo" width={40} height={40} />
                   <span className="text-xs text-gray900">{"الگوریتم"}</span>
                   <span className="text-gray800 text-xs">{"(Algorithm) "}</span>
@@ -100,7 +100,7 @@ function TableDTwo() {
               </td>
 
               <td className="text-center bg-white100">
-                <RobotName parentClassName="flex-row items-center gap-1 justify-center">
+                <RobotName parentClassName="flex-row items-center  gap-1 !justify-start  w-fit mx-auto min-w-[9.6rem]">
                   <Image className="" src="/img/robots/NOVA.png" alt="binex Logo" width={40} height={40} />
                   <span className="text-xs text-gray900">{"نوا"}</span>
                   <span className="text-gray800 text-xs">{"(Nova) "}</span>

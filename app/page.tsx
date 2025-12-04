@@ -31,7 +31,7 @@ export default function Home() {
         <span className={"my-8 flex"} />
         <BinexFeatures />
         <span className={"my-8 flex"} />
-        <FAQBinex showExtraButton />
+        <FAQBinex limit={3} showExtraButton />
         <span className={"my-8 flex"} />
         <BinexRobots />
         <span className={"my-8 flex"} />

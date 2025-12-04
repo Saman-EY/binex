@@ -99,8 +99,8 @@ function DashboardOrderHistoryTable() {
                     width={38}
                     height={38}
                   />
-                  <span className="text-xs text-gray900">{"اینفینیت"}</span>
-                  <span className="text-gray800 text-xs">{"(Infinit) "}</span>
+                  <span className="text-sm text-gray900">{"Infinit"}</span>
+                  {/* <span className="text-gray800 text-xs">{"(Infinit) "}</span> */}
                 </RobotName>
               </td>
               <td className="text-center">

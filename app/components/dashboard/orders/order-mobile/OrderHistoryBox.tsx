@@ -65,8 +65,8 @@ function OrderHistoryBox() {
                     width={38}
                     height={38}
                   />
-                  <span className="text-xs text-dark-black font-semibold">{"نکسوس"}</span>
-                  <span className="text-gray800 text-xxs ms-1">{"(Nexus) "}</span>
+                  <span className="text-base text-dark-black font-semibold">{"Nexus"}</span>
+                  {/* <span className="text-gray800 text-xxs ms-1">{"(Nexus) "}</span> */}
                 </RobotName>
               </div>
             </div>
