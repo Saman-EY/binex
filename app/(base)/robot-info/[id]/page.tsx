@@ -35,7 +35,6 @@ function RobotInfo() {
         <div className="">
           <FilterTable />
           <div className="mt-3"></div>
-          <TotalProfitLoss />
         </div>
         <div className="">
           <TableRobot />

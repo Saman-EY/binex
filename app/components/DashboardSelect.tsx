@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Combobox, Input, InputBase, useCombobox } from "@mantine/core";
 import Image from "next/image";
 import { cn } from "@/utils";
@@ -23,7 +23,9 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
   const [value, setValue] = useState("");
   const [searchValue, setSearchValue] = useState("");
   const [result, setResult] = useState(options);
+  const [isFocused, setIsFocused] = useState(false);
 
+  const inputRef = useRef<HTMLInputElement>(null);
   const getImage = (title: string) => {
     const src = options.find((q) => q.title === value)?.icon;
     if (title === "همه")
@@ -31,6 +33,14 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
 
     if (!src) return undefined;
     return <Image src={src} alt={title} width={24} height={24} />;
+  };
+
+  const handleSelect = (option: string) => {
+    setIsFocused(false);
+    setSearchValue(""); // clear search
+    combobox.closeDropdown();
+
+    inputRef.current?.blur();
   };
 
   useEffect(() => {
@@ -53,16 +63,34 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
           }}
         >
           <Combobox.Target>
-            <div className="relative !rounded-xl !h-12 !bg-white200">
+            <div className="relative flex px-2 !rounded-xl !h-12 !bg-white200">
               {label && <small className={classNameLabel}>{label}:</small>}
               <input
+                ref={inputRef}
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
                 type="text"
-                onFocus={() => combobox.openDropdown()}
-                className="bg-transparent border rounded-lg absolute z-10 bottom-1/2 translate-y-1/2 right-2 w-[90%] outline-none"
+                onFocus={() => {
+                  combobox.openDropdown();
+                  setSearchValue(""); // clear for search
+                  setIsFocused(true);
+                }}
+                onBlur={() => {
+                  setIsFocused(false);
+                  setSearchValue("");
+                }}
+                className="bg-transparent rounded-lg absolute z-10 bottom-1/2 translate-y-1/2 right-2 w-[90%] outline-none"
                 placeholder={placeholder}
               />
+              {!isFocused ? (
+                value ? (
+                  <div className="flex items-center gap-2 z-50">
+                    {getImage(value)} {value}
+                  </div>
+                ) : (
+                  <Input.Placeholder>{placeholder}</Input.Placeholder>
+                )
+              ) : null}
               {/* <InputBase
                 value={value}
                 component="button"
@@ -126,9 +154,9 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
                 </div>
               </Combobox.Option> */}
               {result.map((option) => (
-                <Combobox.Option value={option.title} key={option.title}>
+                <Combobox.Option value={option.title} key={option.title} onClick={() => handleSelect(option.title)}>
                   <div className={cn("flex items-center gap-2", value === option.title && "bg-emerald-50 p-1 rounded")}>
-                    {option.icon && <Image src={option.icon} alt={"bank"} width={24} height={30} />}
+                    {option.icon && <Image src={option.icon} width={24} height={30} alt="icon" />}
                     <span className="font-semibold">{option.title}</span>
                   </div>
                 </Combobox.Option>

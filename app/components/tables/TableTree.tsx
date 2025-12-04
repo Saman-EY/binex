@@ -16,7 +16,7 @@ const TableThree = (props: TTableThreeProps) => {
       {/* desktop */}
       <div className="lg:block hidden">
         <h6 className="text-dark font-semibold text-lg">پوزیشن فعلی</h6>
-        <table className="table border-spacing-y-2 border-separate">
+        <table className="table border-spacing-y-2 border-separate relative">
           {/* head */}
           <thead className="relative">
             <tr className="text-center border-b-0  ">
@@ -78,12 +78,13 @@ const TableThree = (props: TTableThreeProps) => {
               </tr>
             );
           })}
-          <div className="h-[1rem]"></div>
           {/* divider */}
-          <div className=" w-full  absolute">
+          <div className="h-[1rem]"></div>
+          <div className=" w-full absolute">
             <TotalProfitLoss />
           </div>
           <div className="h-[4rem]"></div>
+          {/* divider */}
 
           <thead>
             <tr className="text-center border-b-0  ">
@@ -228,7 +229,15 @@ const TableThree = (props: TTableThreeProps) => {
               </tr>
             );
           })}
-          <div className="my-3"></div>
+
+          {/* divider */}
+          <div className="h-[1rem]"></div>
+          <div className=" w-full absolute">
+            <TotalProfitLoss />
+          </div>
+          <div className="h-[4rem]"></div>
+          {/* divider */}
+
           <thead>
             <tr className="text-center border-b-0">
               <th className="whitespace-break-spaces  text-gray900 text-xs font-medium bg-head-table-color py-3 px-0 rounded-r-xl">

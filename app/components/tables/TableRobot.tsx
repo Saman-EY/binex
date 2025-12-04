@@ -12,6 +12,7 @@ import { routes } from "@/app/routes";
 import RobotName from "../global/RobotName";
 import Caption from "../global/Caption";
 import { useRouter } from "next/navigation";
+import TotalProfitLoss from "../global/TotalProfitLoss";
 
 type TTableRobotProps = {
   arrow?: boolean;
@@ -24,6 +25,64 @@ const TableRobot = ({ arrow = false }: TTableRobotProps) => {
       {/* desktop */}
       <div className="lg:block hidden">
         <table className="table border-spacing-y-2 border-separate">
+          {/* head */}
+          <thead className="relative">
+            <tr className="text-center border-b-0  ">
+              <th className="text-gray900 text-sm font-medium bg-[#d6edf1] py-4 rounded-r-xl">نماد </th>
+              <th className="text-gray900 text-sm font-medium bg-[#d6edf1] py-4">نام ارز</th>
+              <th className="text-gray900 text-sm font-medium bg-[#d6edf1] py-4"> تایم فریم </th>
+              <th className="text-gray900 text-sm font-medium bg-[#d6edf1] py-4 rounded-l-xl">درصد سود و زیان‌</th>
+            </tr>
+            <span className="absolute flex size-3 top-1 left-1">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-600 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+            </span>
+          </thead>
+          {Array.from({ length: 1 }).map((item, idx) => {
+            return (
+              <tr
+                onClick={() => router.push("/dedicated-currency")}
+                key={idx}
+                className="bg-transparent cursor-pointer shadow-binex rounded-xl border-b-0 text-center hover:shadow-binex-xl hover:transition-all"
+              >
+                <td className="flex justify-center items-center gap-2">
+                  <CryptocurrencyLogo>
+                    <Image
+                      className=""
+                      src="/img/cryptocurrency/3.svg"
+                      alt="Cryptocurrency logo"
+                      width={40}
+                      height={40}
+                    />
+                  </CryptocurrencyLogo>
+                </td>
+                <td className="px-1">
+                  <Link href={routes.dedicatedCurrency}>
+                    <NameCryptocurrency parentClassName="flex-row items-center justify-center">
+                      <span className="text-base text-gray900 font-semibold">{"BTC"}</span>
+                      <span className="text-gray800 text-sm ms-1 ">{"(بیتکوین)"}</span>
+                    </NameCryptocurrency>
+                  </Link>
+                </td>
+                <td>
+                  <TimeFrame className="text-xs text-dark">{"1h"}</TimeFrame>
+                </td>
+
+                <td className="">
+                  <UpDownBtn showIcon>{"+1.05%"}</UpDownBtn>
+                </td>
+              </tr>
+            );
+          })}
+
+          {/* divider */}
+          <div className="h-[1rem]"></div>
+          <div className=" w-full absolute">
+            <TotalProfitLoss />
+          </div>
+          <div className="h-[4rem]"></div>
+          {/* divider */}
+
           {/* head */}
           <thead>
             <tr className="text-center border-b-0  ">
@@ -76,7 +135,15 @@ const TableRobot = ({ arrow = false }: TTableRobotProps) => {
         </table>
       </div>
       {/* mobile */}
-      <div className="lg:hidden block">
+      <div className="lg:hidden relative block">
+        {/* divider */}
+        <div className="h-[1rem]"></div>
+        <div className=" w-full absolute">
+          <TotalProfitLoss />
+        </div>
+        <div className="h-[4rem]"></div>
+        {/* divider */}
+
         {Array.from({ length: 10 }).map((item, idx) => {
           return (
             <div
