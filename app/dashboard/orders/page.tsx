@@ -42,6 +42,9 @@ async function Orders({}: TOrdersProps) {
         <div className="flex items-center justify-center lg:items-start  mt-4 flex-col">
           <Caption className="text-dark-black text-base">{"سفارشات فعال من"}</Caption>
         </div>
+        <div className="bg-white  rounded-2xl p-4">
+          <Filters />
+        </div>
         <div className="flex flex-col gap-4">
           {orders.map((q, i) => {
             return <OrderBox key={i} order={q} />;
@@ -62,36 +65,45 @@ export default Orders;
 
 const Filters = () => {
   return (
-    <section className="mt-5 flex items-center gap-4 w-full">
-      <div className="w-full">
-        <DashboardSelect
-          placeholder="ارز"
-          options={[
-            { title: "BTC", icon: "/img/cryptocurrency/3.svg" },
-            { title: "ETH", icon: "/img/cryptocurrency/ETH.svg" },
-          ]}
-        />
+    <section className="mt-5 flex flex-col lg:flex-row items-center gap-4 w-full">
+      <div className="w-full flex gap-1 items-center">
+        <label className="shrink-0 text-gray800 min-w-[4rem] lg:min-w-min text-end text-sm" htmlFor="">
+          ارز :
+        </label>
+        <div className="w-full">
+          <DashboardSelect
+            placeholder=""
+            options={[
+              { title: "BTC", icon: "/img/cryptocurrency/3.svg" },
+              { title: "ETH", icon: "/img/cryptocurrency/ETH.svg" },
+            ]}
+          />
+        </div>
       </div>
-      <div className="w-full">
-        <DashboardSelect
-          placeholder="صرافی"
-          options={[
-            { title: "BTC", icon: "/img/cryptocurrency/3.svg" },
-            { title: "ETH", icon: "/img/cryptocurrency/ETH.svg" },
-          ]}
-        />
+      <div className="w-full flex gap-1 items-center">
+        <label className="shrink-0 text-gray800 min-w-[4rem] lg:min-w-min text-end text-sm" htmlFor="">
+          صرافی :
+        </label>
+        <div className="w-full">
+          <DashboardSelect placeholder="" options={exchanges} />
+        </div>
       </div>
-      <div className="w-full">
-        <DashboardSelect
-          placeholder="ربات"
-          options={[
-            { title: "Neuron", icon: "/img/robots/NEURON.png" },
-            { title: "Quantom", icon: "/img/robots/QUANTUM.png" },
-            { title: "Algorithm", icon: "/img/robots/ALGORITHM.png" },
-            { title: "Starlet", icon: "/img/robots/STARLET.png" },
-            { title: "Infinit", icon: "/img/robots/INFINIT.png" },
-          ]}
-        />
+      <div className="w-full flex gap-1 items-center">
+        <label className="shrink-0 text-gray800 min-w-[4rem] lg:min-w-min text-end text-sm" htmlFor="">
+          ربات :
+        </label>
+        <div className="w-full">
+          <DashboardSelect
+            placeholder=""
+            options={[
+              { title: "Neuron", icon: "/img/robots/NEURON.png" },
+              { title: "Quantom", icon: "/img/robots/QUANTUM.png" },
+              { title: "Algorithm", icon: "/img/robots/ALGORITHM.png" },
+              { title: "Starlet", icon: "/img/robots/STARLET.png" },
+              { title: "Infinit", icon: "/img/robots/INFINIT.png" },
+            ]}
+          />
+        </div>
       </div>
       <div className="w-full">
         <Select className="text-gray800 lg:text-sm  text-xs text-nowrap" label="تاریخ شروع:" />
@@ -112,3 +124,16 @@ const Filters = () => {
     </section>
   );
 };
+
+const exchanges = [
+  {
+    id: 1,
+    title: "Binance",
+    icon: "/img/binancelogo.png",
+  },
+  {
+    id: 2,
+    title: "Kucoin",
+    icon: "/img/kucoinlogo.png",
+  },
+];
