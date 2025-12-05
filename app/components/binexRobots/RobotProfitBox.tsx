@@ -11,9 +11,13 @@ function RobotProfitBox() {
     <div className="flex-col gap-3 flex">
       <div
         onClick={() => {
-          document.getElementById("toScroll")?.scrollIntoView({
-            behavior: "smooth",
-          });
+          const el = document.getElementById("toScroll");
+          if (!el) return;
+
+          const offset = 60; // px from top
+          const top = el.getBoundingClientRect().top + window.scrollY - offset;
+
+          window.scrollTo({ top, behavior: "smooth" });
         }}
         className="flex items-center cursor-pointer  justify-between bg-gray-100 relative rounded-2xl px-4 py-3"
       >
@@ -35,9 +39,13 @@ function RobotProfitBox() {
 
       <div
         onClick={() => {
-          document.getElementById("toScroll")?.scrollIntoView({
-            behavior: "smooth",
-          });
+          const el = document.getElementById("toScroll");
+          if (!el) return;
+
+          const offset = 60; // px from top
+          const top = el.getBoundingClientRect().top + window.scrollY - offset;
+
+          window.scrollTo({ top, behavior: "smooth" });
         }}
         className="flex items-center cursor-pointer justify-between bg-gray-200 rounded-2xl relative px-4 py-3"
       >
@@ -58,9 +66,13 @@ function RobotProfitBox() {
       </div>
       <div
         onClick={() => {
-          document.getElementById("toScroll")?.scrollIntoView({
-            behavior: "smooth",
-          });
+          const el = document.getElementById("toScroll");
+          if (!el) return;
+
+          const offset = 60; // px from top
+          const top = el.getBoundingClientRect().top + window.scrollY - offset;
+
+          window.scrollTo({ top, behavior: "smooth" });
         }}
         className="flex items-center cursor-pointer justify-between bg-gray-300 rounded-2xl relative px-4 py-3"
       >

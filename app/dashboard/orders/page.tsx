@@ -72,8 +72,9 @@ const Filters = () => {
         </label>
         <div className="w-full">
           <DashboardSelect
-            placeholder=""
+            placeholder="نماد ارز را تایپ کنید..."
             options={[
+              { title: "همه", icon: "/img/cryptocurrency/multiple-cryptocurrencies.svg" },
               { title: "BTC", icon: "/img/cryptocurrency/3.svg" },
               { title: "ETH", icon: "/img/cryptocurrency/ETH.svg" },
             ]}
@@ -85,7 +86,7 @@ const Filters = () => {
           صرافی :
         </label>
         <div className="w-full">
-          <DashboardSelect placeholder="" options={exchanges} />
+          <DashboardSelect placeholder="نام صرافی را تایپ کنید..." options={exchanges} />
         </div>
       </div>
       <div className="w-full flex gap-1 items-center">
@@ -94,8 +95,9 @@ const Filters = () => {
         </label>
         <div className="w-full">
           <DashboardSelect
-            placeholder=""
+            placeholder="نام ربات را تایپ کنید..."
             options={[
+              { title: "همه", icon: "/img/cryptocurrency/multiple-cryptocurrencies.svg" },
               { title: "Neuron", icon: "/img/robots/NEURON.png" },
               { title: "Quantom", icon: "/img/robots/QUANTUM.png" },
               { title: "Algorithm", icon: "/img/robots/ALGORITHM.png" },
@@ -126,6 +128,7 @@ const Filters = () => {
 };
 
 const exchanges = [
+  { id: 0, title: "همه", icon: "/img/cryptocurrency/multiple-cryptocurrencies.svg" },
   {
     id: 1,
     title: "Binance",

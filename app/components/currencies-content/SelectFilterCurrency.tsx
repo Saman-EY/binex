@@ -17,7 +17,7 @@ function SelectFilterCurrency() {
             </label>
             <div className="w-full">
               <DashboardSelect
-                placeholder=""
+                placeholder="نام ربات را تایپ کنید..."
                 options={[
                   { title: "Neuron", icon: "/img/robots/NEURON.png" },
                   { title: "Quantom", icon: "/img/robots/QUANTUM.png" },

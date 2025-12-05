@@ -37,13 +37,13 @@ function TopCurrencies() {
               </div>
               <div className="">
                 <TopCurrenciesContent title="ربات">
-                  <Link href={routes.robotInfo} className="flex items-center justify-start gap-2">
+                  <div className="flex items-center justify-start gap-2">
                     <Image className="" src="/img/robots/EDGE3.png" alt="" width={34} height={34} />
                     <RobotName parentClassName="">
                       <span className="lg:text-sm text-xs text-gray900">{"اج3"}</span>
                       <span className="text-gray800 lg:text-sm text-xs ms-1">{"(Edge3) "}</span>
                     </RobotName>
-                  </Link>
+                  </div>
                 </TopCurrenciesContent>
               </div>
             </div>
@@ -94,13 +94,13 @@ function TopCurrencies() {
               </div>
               <div className="">
                 <TopCurrenciesContent title="ربات">
-                  <Link href={routes.robotInfo} className="flex items-center justify-start gap-2">
+                  <div className="flex items-center justify-start gap-2">
                     <Image className="" src="/img/robots/EXPLORE.png" alt="" width={32} height={32} />
                     <RobotName parentClassName="">
                       <span className="lg:text-sm text-xs text-gray900">{"اکسپلور"}</span>
                       <span className="text-gray800 lg:text-sm text-xs ms-1">{"(Explore) "}</span>
                     </RobotName>
-                  </Link>
+                  </div>
                 </TopCurrenciesContent>
               </div>
             </div>
@@ -154,13 +154,13 @@ function TopCurrencies() {
               </div>
               <div className="">
                 <TopCurrenciesContent title="ربات">
-                  <Link href={routes.robotInfo} className="flex items-center justify-start gap-2">
+                  <div className="flex items-center justify-start gap-2">
                     <Image className="" src="/img/robots/WEB6.png" alt="" width={32} height={32} />
                     <RobotName parentClassName="">
                       <span className="lg:text-sm text-xs text-gray900">{"وب6"}</span>
                       <span className="text-gray800 lg:text-sm text-xs ms-1">{"(Web6) "}</span>
                     </RobotName>
-                  </Link>
+                  </div>
                 </TopCurrenciesContent>
               </div>
             </div>
@@ -214,13 +214,13 @@ function TopCurrencies() {
               </div>
               <div className="">
                 <TopCurrenciesContent title="ربات">
-                  <Link href={routes.robotInfo} className="flex items-center justify-start gap-2">
+                  <div className="flex items-center justify-start gap-2">
                     <Image className="" src="/img/robots/QUANTUM.png" alt="" width={32} height={32} />
                     <RobotName parentClassName="">
                       <span className="lg:text-sm text-xs text-gray900">{"کوانتوم"}</span>
                       <span className="text-gray800 lg:text-sm text-xs ms-1">{"(Quantom) "}</span>
                     </RobotName>
-                  </Link>
+                  </div>
                 </TopCurrenciesContent>
               </div>
             </div>

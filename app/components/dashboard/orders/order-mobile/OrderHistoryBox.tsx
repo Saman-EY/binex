@@ -20,7 +20,7 @@ function OrderHistoryBox() {
     <>
       <div
         className={cn(
-          "border border-gray400 bg-white rounded-2xl px-2 py-4 w-full relative transition-[max-height] overflow-hidden max-h-[7.5rem]",
+          "border border-gray400 bg-white rounded-2xl px-2 py-4 w-full relative transition-[max-height] overflow-hidden max-h-[8rem]",
           open && "max-h-[1000px] border-dark800 shadow-lg"
         )}
       >
@@ -33,7 +33,7 @@ function OrderHistoryBox() {
           </i>
         </div>
         <div className="flex flex-col px-3 pb-0.5 pt-0">
-          <div className="flex w-full justify-between items-center  border-b border-line pb-2">
+          <div className="flex w-full justify-between items-center   border-b border-line pb-2">
             <Link href={routes.dashboard.binanceMarket2} className="flex items-center gap-2">
               <CryptocurrencyLogo className="!p-[2px] !h-11 !w-11">
                 <div className="">
@@ -71,7 +71,7 @@ function OrderHistoryBox() {
               </div>
             </div>
           </div>
-          <div className="w-full pt-2 ">
+          <div className="w-full pt-5 ">
             <ProfitLossContent
               parentclassName="flex-row items-center justify-between gap-2 py-1 w-full"
               title="ساعت و تاریخ معامله "

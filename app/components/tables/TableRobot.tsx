@@ -1,17 +1,14 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import CryptocurrencyLogo from "../global/CryptocurrencyLogo";
 import Link from "next/link";
 import NameCryptocurrency from "../global/NameCryptocurrency";
-import TextInfo from "../global/TextInfo";
 import UpDownBtn from "../global/UpDownBtn";
-import ButtonSellBuy from "../global/button/ButtonSellBuy";
 import Image from "next/image";
 import TimeFrame from "../global/TimeFrame";
 import { routes } from "@/app/routes";
-import RobotName from "../global/RobotName";
 import Caption from "../global/Caption";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import TotalProfitLoss from "../global/TotalProfitLoss";
 
 type TTableRobotProps = {
@@ -20,6 +17,22 @@ type TTableRobotProps = {
 
 const TableRobot = ({ arrow = false }: TTableRobotProps) => {
   const router = useRouter();
+
+  const params = useSearchParams();
+
+  useEffect(() => {
+    const id = params.get("scroll");
+    if (!id) return;
+
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    const offset = -80; // px from top
+    const top = el.getBoundingClientRect().top + window.scrollY - offset;
+
+    window.scrollTo({ top, behavior: "smooth" });
+  }, [params]);
+
   return (
     <div id="toScroll" className="">
       {/* desktop */}

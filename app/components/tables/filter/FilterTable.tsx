@@ -15,7 +15,7 @@ function FilterTable() {
           </label>
           <div className="w-full">
             <DashboardSelect
-              placeholder=""
+              placeholder="نماد ارز را تایپ کنید..."
               options={[
                 { title: "BTC", icon: "/img/cryptocurrency/3.svg" },
                 { title: "ETH", icon: "/img/cryptocurrency/ETH.svg" },

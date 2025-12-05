@@ -54,7 +54,21 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
 
   return (
     <div className="flex flex-col items-start gap-2">
-      <div className={cn("w-full", className)}>
+      <div
+        onClick={() => {
+          if (combobox.dropdownOpened) {
+            combobox.closeDropdown();
+            inputRef.current?.blur();
+            setIsFocused(false);
+            return;
+          }
+
+          inputRef.current?.focus();
+          combobox.openDropdown();
+          setIsFocused(true);
+        }}
+        className={cn("w-full ", className)}
+      >
         <Combobox
           store={combobox}
           onOptionSubmit={(val) => {
@@ -70,18 +84,19 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
                 value={searchValue}
                 onChange={(e) => setSearchValue(e.target.value)}
                 type="text"
-                onFocus={() => {
-                  combobox.openDropdown();
-                  setSearchValue(""); // clear for search
-                  setIsFocused(true);
-                }}
+                // onFocus={() => {
+                //   combobox.openDropdown();
+                //   setSearchValue(""); // clear for search
+                //   setIsFocused(true);
+                // }}
                 onBlur={() => {
                   setIsFocused(false);
                   setSearchValue("");
                 }}
-                className="bg-transparent rounded-lg absolute z-10 bottom-1/2 translate-y-1/2 right-2 w-[90%] outline-none"
+                className="bg-transparent rounded-lg absolute z-10 bottom-1/2 translate-y-1/2 right-2 w-[90%] outline-none placeholder:text-xs"
                 placeholder={!value ? placeholder : ""}
               />
+
               {!isFocused
                 ? value && (
                     <div
@@ -94,26 +109,7 @@ function DashboardSelect({ label, className, classNameLabel, options, placeholde
                     </div>
                   )
                 : null}
-              {/* <InputBase
-                value={value}
-                component="button"
-                type="button"
-                pointer
-                variant={"filled"}
-                rightSection={<Combobox.Chevron />}
-                rightSectionPointerEvents="none"
-                onClick={() => combobox.toggleDropdown()}
-                className={"test"}
-                classNames={{
-                  input: "!rounded-xl !h-12 !bg-white200",
-                }}
-              >
-                {(value && (
-                  <div className={"flex items-center gap-2"}>
-                    {getImage(value)} {value}
-                  </div>
-                )) || <Input.Placeholder>{placeholder}</Input.Placeholder>}
-              </InputBase> */}
+
               <div
                 onClick={() => {
                   inputRef.current?.focus();

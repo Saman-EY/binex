@@ -105,14 +105,14 @@ function ExchangesBinex() {
           <div className="flex flex-col items-center gap-3 justify-center">
             <Image
               className="object-cover"
-              src="/img/Exchanges/Binance/idhniLAzR2_1764778534393.png"
+              src="/img/Exchanges/Crypto/idAKpAIgYa_1764877957423.jpeg"
               alt="binance logo"
               width={100}
               height={100}
             />
             <div className="flex flex-col items-center justify-center">
-              <span className="text-black900 font-black mb-2 lg:text-3xl text-xl">بایننس</span>
-              <span className="text-dark lg:text-lg text-base">Binance</span>
+              <span className="text-black900 font-black mb-2 lg:text-3xl text-xl">کریپتو</span>
+              <span className="text-dark lg:text-lg text-base">Crypto.com</span>
             </div>
           </div>
         </div>
