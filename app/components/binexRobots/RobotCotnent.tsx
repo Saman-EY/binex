@@ -11,7 +11,7 @@ function RobotCotnent() {
     <>
       <div className="flex justify-center">
         <div className="flex flex-col items-end gap-1">
-          <div className="flex items-center gap-1">
+          <div onClick={(e) => e.stopPropagation()} className="flex items-center gap-1">
             <CryptocurrencyLogo className="p[0px] h-8 w-8">
               <Link href={routes.dedicatedCurrency}>
                 <Image
